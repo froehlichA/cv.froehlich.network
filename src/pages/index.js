@@ -1,5 +1,6 @@
 import React from 'react';
 import Theme from '../themes/default';
+import { graphql } from 'gatsby';
 
 import {
   Spacer,
@@ -25,7 +26,7 @@ import {
   Floater
 } from '../components/elements';
 
-export default () => (
+export default ({ data }) => (
   <Theme>
     <Row>
       <LeftColumn>
@@ -59,7 +60,7 @@ export default () => (
     </Row>
     <Spacer height="10rem" />
     <Cover>
-      <CoverImage src="./space.jpg" alt="" />
+      <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="1rem" />
         <Hero color="white">Above and beyond</Hero>
@@ -133,7 +134,7 @@ export default () => (
     </Row>
     <Spacer height="10rem" />
     <Cover>
-      <CoverImage src="./woodwork.jpg" alt="" />
+      <CoverImage fluid={data.woodwork.childImageSharp.fluid}/>
       <CoverContent>
         <Spacer height="1rem" />
         <Hero color="white" inverted>
@@ -175,15 +176,15 @@ export const query = graphql`
   query {
     space: file(relativePath: { eq: "space.jpg" }) {
       childImageSharp {
-        fluid(grayscale: true) {
-          src
+        fluid(grayscale: true, maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     woodwork: file(relativePath: { eq: "woodwork.jpg" }) {
       childImageSharp {
-        fluid(grayscale: true) {
-          src
+        fluid(grayscale: true, maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

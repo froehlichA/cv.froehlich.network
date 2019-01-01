@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 export const Image = styled.img``;
 
@@ -10,9 +11,9 @@ export const Cover = styled.div`
   overflow: auto;
 `;
 
-export const CoverImage = styled.img`
+export const CoverImage = styled(Img)`
   display: block;
-  position: absolute;
+  position: absolute !important;
   left: 0;
   width: 100%;
   height: 100%;
