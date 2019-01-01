@@ -2,17 +2,26 @@ import styled from 'styled-components';
 
 export const Image = styled.img``;
 
-export const BackgroundImage = styled.div`
+export const Cover = styled.div`
+  position: relative;
   width: 100vw;
   margin-left: -10vw;
   z-index: -2;
-  background-image: url("${props => props.src}");
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: auto;
 `;
 
-export const BackgroundImageContent = styled.div`
+export const CoverImage = styled.img`
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+`;
+
+export const CoverContent = styled.div`
+  float: left;
   color: white;
   position: relative;
   left: 10vw;
@@ -21,8 +30,8 @@ export const BackgroundImageContent = styled.div`
 `;
 
 export const Floater = styled.div`
-  background: ${props => props.inverted ? 'black' : 'white'};
-  color: ${props => props.inverted ? 'white' : 'black'};
+  background: ${props => (props.inverted ? 'black' : 'white')};
+  color: ${props => (props.inverted ? 'white' : 'black')};
   margin: 0px -10px;
   padding: 2px 10px;
   width: 100%;

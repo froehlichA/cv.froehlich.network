@@ -19,8 +19,9 @@ import {
   ListItem
 } from '../components/typography';
 import {
-  BackgroundImage,
-  BackgroundImageContent,
+  Cover,
+  CoverImage,
+  CoverContent,
   Floater
 } from '../components/elements';
 
@@ -46,9 +47,9 @@ export default () => (
     <Row>
       <LeftParagraph>
         <TextP>
-          Working with my broad range of coding skills, I can create applications
-          for Web / Desktop / Mobile, prototype projects, and design database
-          structures and algorithms.
+          Working with my broad range of coding skills, I can create
+          applications for Web / Desktop / Mobile, prototype projects, and
+          design database structures and algorithms.
         </TextP>
         <TextP>
           Sometimes, I also like to write stuff and publish it here, for others
@@ -57,8 +58,9 @@ export default () => (
       </LeftParagraph>
     </Row>
     <Spacer height="10rem" />
-    <BackgroundImage src="./space.jpg" alt="">
-      <BackgroundImageContent>
+    <Cover>
+      <CoverImage src="./space.jpg" alt="" />
+      <CoverContent>
         <Spacer height="1rem" />
         <Hero color="white">Above and beyond</Hero>
         <Spacer height="1rem" />
@@ -89,8 +91,8 @@ export default () => (
           </RightParagraph>
         </Row>
         <Spacer height="1rem" />
-      </BackgroundImageContent>
-    </BackgroundImage>
+      </CoverContent>
+    </Cover>
     <Spacer height="10rem" />
     <Row>
       <LeftColumn>
@@ -129,11 +131,14 @@ export default () => (
         </List>
       </RightColumn>
     </Row>
-    <Spacer height="5rem" />
-    <BackgroundImage src="./woodwork.jpg" alt="">
-      <BackgroundImageContent>
+    <Spacer height="10rem" />
+    <Cover>
+      <CoverImage src="./woodwork.jpg" alt="" />
+      <CoverContent>
         <Spacer height="1rem" />
-        <Hero color="white">How I do it</Hero>
+        <Hero color="white" inverted>
+          How I do it
+        </Hero>
         <Spacer height="1rem" />
         <Row>
           <LeftParagraph>
@@ -153,8 +158,8 @@ export default () => (
           </LeftParagraph>
         </Row>
         <Spacer height="1rem" />
-      </BackgroundImageContent>
-    </BackgroundImage>
+      </CoverContent>
+    </Cover>
     <Spacer height="10rem" />
     <Row>
       <BigLink>
@@ -165,3 +170,22 @@ export default () => (
     <small>© 2018 - Alexander Fröhlich</small>
   </Theme>
 );
+
+export const query = graphql`
+  query {
+    space: file(relativePath: { eq: "space.jpg" }) {
+      childImageSharp {
+        fluid(grayscale: true) {
+          src
+        }
+      }
+    }
+    woodwork: file(relativePath: { eq: "woodwork.jpg" }) {
+      childImageSharp {
+        fluid(grayscale: true) {
+          src
+        }
+      }
+    }
+  }
+`;
