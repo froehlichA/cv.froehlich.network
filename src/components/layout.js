@@ -1,6 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export const Content = styled.div`
+  background-color: ${props => props.theme.bg};
+  width: 96vw;
+  position: absolute;
+  top: 0px;
+  left: 4vw;
+  z-index: -1000;
+  min-height: 100vh;
+`;
+
 export const Container = styled.div`
   margin: 100px auto;
   width: 80vw;
@@ -13,7 +23,7 @@ export const Spacer = styled.div`
   position: relative;
   left: -10vw;
   width: 100vw;
-  ${props => props.colored && 'background-color: black;'}
+  ${props => props.colored && `background-color: ${props.theme.fg};`}
   z-index: -1;
 `;
 
@@ -45,7 +55,7 @@ export const Leftbar = styled.div`
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: ${props => props.theme.fg};
   display: none;
   @media (min-width: 768px) {
     display: initial;
@@ -53,7 +63,7 @@ export const Leftbar = styled.div`
 `;
 
 export const LeftbarItem = styled.div`
-  color: white;
+  color: ${props => props.theme.bg};
   width: 20px;
   margin: 20px auto;
   font-size: 18px;

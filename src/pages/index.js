@@ -41,7 +41,7 @@ export default ({ data }) => (
     </Row>
     <Spacer height="6rem" />
     <Hero>Hi there.</Hero>
-    <Hero inverted hover>
+    <Hero color="fg" inverted>
       I solve problems using code.
     </Hero>
     <Spacer height="2rem" />
@@ -63,24 +63,24 @@ export default ({ data }) => (
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="2rem" />
-        <Hero color="white">Above and beyond</Hero>
+        <Hero color="white" inverted>Above and beyond</Hero>
         <Spacer height="1rem" />
         <Row>
           <RightParagraph>
             <Floater inverted>
-              <TextP>
+              <TextP inverted>
                 My school taught me a lot regarding not only programming, but
                 understanding the deeper meanings and intentions, the workflows
                 and design processes behind it.
               </TextP>
-              <TextP>
+              <TextP inverted>
                 We were not only taught how to write in certain programming
                 languages, but also about the internal functioning of computers,
                 building and maintaining a computer network, and the
                 considerations that go into planning a software project from
                 scratch.
               </TextP>
-              <TextP>
+              <TextP inverted>
                 In the meantime, I had picked up web-development as a hobby, but
                 it quickly involved into a fascination. The ability of websites
                 and webapps to have a far wider reach than traditional
@@ -137,19 +137,19 @@ export default ({ data }) => (
       <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="2rem" />
-        <Hero color="white" inverted>
+        <Hero color="bg" inverted>
           Reach for the stars
         </Hero>
         <Spacer height="1rem" />
         <Row>
           <LeftParagraph>
             <Floater inverted>
-              <TextP>
+              <TextP inverted>
                 Everyone can learn coding like everyone can learn woodworking.
                 It takes time and patience to succeed, and you can recognize
                 sloppy craftmanship in an instant.
               </TextP>
-              <TextP>
+              <TextP inverted>
                 That is why I never stop learning. You can always improve
                 yourself, always learn more, always strive to be better. No one
                 ever reaches perfection or absolute knowledge in a craft, but I
