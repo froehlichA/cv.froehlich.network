@@ -5,7 +5,6 @@ export const Cover = styled.div`
   position: relative;
   width: 100vw;
   margin-left: -10vw;
-  z-index: -2;
   overflow: auto;
 `;
 
@@ -21,7 +20,7 @@ export const CoverImage = styled(Img)`
 
 export const CoverContent = styled.div`
   float: left;
-  color: white;
+  color: ${props => props.theme.bg};
   position: relative;
   left: 10vw;
   width: 80vw;
@@ -29,10 +28,36 @@ export const CoverContent = styled.div`
 `;
 
 export const Floater = styled.div`
-  background: ${props => (props.inverted ? 'black' : 'white')};
-  box-shadow: 5px 5px ${props => (props.inverted ? 'white' : 'black')};
-  color: ${props => (props.inverted ? 'white' : 'black')};
+  background: ${props => props.theme.fg};
+  box-shadow: 5px 5px ${props => props.theme.bg};
+  color: ${props => props.theme.bg};
   margin: 0px -10px;
   padding: 2px 10px;
   width: 100%;
+`;
+
+export const FloatingButton = styled.button`
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  box-shadow: 2px 2px ${props => props.theme.fg};
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  :focus {
+    outline: 0;
+  }
+  :hover {
+    background-color: lightgray;
+  }
+  :active {
+    background-color: gray;
+    right: 28px;
+    top: 32px;
+    box-shadow: 0px 0px black;
+  }
 `;
