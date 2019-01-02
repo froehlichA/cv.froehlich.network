@@ -3,12 +3,16 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   background-color: ${props => props.theme.bg};
-  width: 96vw;
   position: absolute;
   top: 0px;
-  left: 4vw;
   z-index: -1000;
   min-height: 100vh;
+  width: 100vw;
+  left: 0vw;
+  @media (min-width: 768px) {
+    left: 4vw;
+    width: 96vw;
+  }
 `;
 
 export const Container = styled.div`
