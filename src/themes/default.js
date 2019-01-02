@@ -14,15 +14,23 @@ export default class DefaultTheme extends React.Component {
     this.state = {
       theme: {
         fg: 'black',
-        bg: 'white'
+        lightfg: 'grey',
+        lightbg: 'lightgrey',
+        bg: 'white',
       }
     };
     this.invertTheme = this.invertTheme.bind(this);
   }
 
   invertTheme() {
-    this.setState((prevState) => ({ theme: { fg: prevState.theme.bg, bg: prevState.theme.fg }}));
-    console.log(this.state);
+    this.setState((prevState) => (
+      { theme:{
+        fg: prevState.theme.bg,
+        lightfg: prevState.theme.lightbg,
+        lightbg: prevState.theme.lightfg,
+        bg: prevState.theme.fg
+      }}
+    ));
   }
 
   render() {
@@ -42,7 +50,7 @@ export default class DefaultTheme extends React.Component {
             <LeftbarItem>F</LeftbarItem>
           </Leftbar>
           <FloatingButton onClick={this.invertTheme}>
-            <img src="./day.svg" alt="Theme Toggler" />
+            <img src={`./day-${this.state.theme.fg}.svg`} alt="Theme Toggler" />
           </FloatingButton>
           <Content>
             <Container>{this.props.children}</Container>
