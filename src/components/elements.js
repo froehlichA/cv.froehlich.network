@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
-export const Image = styled.img``;
-
 export const Cover = styled.div`
   position: relative;
   width: 100vw;
@@ -32,6 +30,7 @@ export const CoverContent = styled.div`
 
 export const Floater = styled.div`
   background: ${props => (props.inverted ? 'black' : 'white')};
+  box-shadow: 5px 5px ${props => (props.inverted ? 'white' : 'black')};
   color: ${props => (props.inverted ? 'white' : 'black')};
   margin: 0px -10px;
   padding: 2px 10px;
