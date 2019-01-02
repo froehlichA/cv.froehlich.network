@@ -56,3 +56,7 @@ export const ListItem = styled.li`
   color: ${props => props.color || props.theme.fg};
   ${resetToP}
 `;
+
+export const Small = styled.small`
+  color: ${props => props.color || props.theme.fg};
+`;

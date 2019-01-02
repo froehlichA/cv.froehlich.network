@@ -17,7 +17,8 @@ import {
   TextH2,
   TextP,
   List,
-  ListItem
+  ListItem,
+  Small
 } from '../components/typography';
 import {
   Cover,
@@ -168,7 +169,7 @@ export default ({ data }) => (
         <a href="https://github.com/froehlichA">Github</a>
       </BigLink>
     </Row>
-    <small>© 2018 - Alexander Fröhlich</small>
+    <Small>© 2018 - Alexander Fröhlich</Small>
   </Theme>
 );
 
