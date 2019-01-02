@@ -24,7 +24,7 @@ export const BigLink = styled.p`
 
 const resetToP = `
   color: ${props => props.color ? props.color : 'white'};
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1px;
   line-height: 1.8;
