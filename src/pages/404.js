@@ -10,7 +10,7 @@ export default () => (
     <Hero>I'm sorry,</Hero>
     <Hero inverted>it's a 404</Hero>
     <Spacer height="1rem" />
-    <TextP>Sorry, there aren't really any other pages. Maybe there will be more in the future?</TextP>
+    <TextP>There aren't really any other pages. Maybe there will be more in the future?</TextP>
     <TextP>You can click <Link to="/">HERE</Link> to go back home.</TextP>
   </Theme>
 )

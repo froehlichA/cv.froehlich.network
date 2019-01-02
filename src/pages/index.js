@@ -49,11 +49,11 @@ export default ({ data }) => (
       <LeftParagraph>
         <TextP>
           Working with my broad range of coding skills, I can create
-          applications for Web / Desktop / Mobile, prototype projects, and
-          design database structures and algorithms.
+          applications for Web / Desktop / Mobile, prototype software projects,
+          and design database structures and algorithms.
         </TextP>
         <TextP>
-          Sometimes, I also like to write stuff and publish it here, for others
+          Sometimes, I also like to write stuff, for others
           to read / enjoy / criticize.
         </TextP>
       </LeftParagraph>
@@ -62,7 +62,7 @@ export default ({ data }) => (
     <Cover>
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
-        <Spacer height="1rem" />
+        <Spacer height="2rem" />
         <Hero color="white">Above and beyond</Hero>
         <Spacer height="1rem" />
         <Row>
@@ -91,7 +91,7 @@ export default ({ data }) => (
             </Floater>
           </RightParagraph>
         </Row>
-        <Spacer height="1rem" />
+        <Spacer height="2rem" />
       </CoverContent>
     </Cover>
     <Spacer height="10rem" />
@@ -134,11 +134,11 @@ export default ({ data }) => (
     </Row>
     <Spacer height="10rem" />
     <Cover>
-      <CoverImage fluid={data.woodwork.childImageSharp.fluid}/>
+      <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
-        <Spacer height="1rem" />
+        <Spacer height="2rem" />
         <Hero color="white" inverted>
-          How I do it
+          Reach for the stars
         </Hero>
         <Spacer height="1rem" />
         <Row>
@@ -158,7 +158,7 @@ export default ({ data }) => (
             </Floater>
           </LeftParagraph>
         </Row>
-        <Spacer height="1rem" />
+        <Spacer height="2rem" />
       </CoverContent>
     </Cover>
     <Spacer height="10rem" />
