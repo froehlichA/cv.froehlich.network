@@ -6,6 +6,7 @@ import '../../node_modules/normalize.css/normalize.css';
 import '../../node_modules/flexboxgrid/css/flexboxgrid.css';
 import './global.css';
 import { Leftbar, LeftbarItem, Container, Content } from '../components/layout';
+import GithubCorner from '../components/github-corner';
 
 export default class DefaultTheme extends React.Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class DefaultTheme extends React.Component {
               content="Online Portfolio of Alexander Fröhlich"
             />
           </Helmet>
+          <GithubCorner></GithubCorner>
           <Leftbar>
             <LeftbarItem>A</LeftbarItem>
             <LeftbarItem>F</LeftbarItem>
