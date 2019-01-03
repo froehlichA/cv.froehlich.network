@@ -64,7 +64,7 @@ export default ({ data }) => (
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="2rem" />
-        <Hero color="white" inverted>Above and beyond</Hero>
+        <Hero color="white">Above and beyond</Hero>
         <Spacer height="1rem" />
         <Row>
           <RightParagraph>
@@ -138,7 +138,7 @@ export default ({ data }) => (
       <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="2rem" />
-        <Hero color="bg" inverted>
+        <Hero color="wg">
           Reach for the stars
         </Hero>
         <Spacer height="1rem" />
