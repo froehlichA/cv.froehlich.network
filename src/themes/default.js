@@ -6,7 +6,6 @@ import '../../node_modules/normalize.css/normalize.css';
 import '../../node_modules/flexboxgrid/css/flexboxgrid.css';
 import './global.css';
 import { Leftbar, LeftbarItem, Container, Content } from '../components/layout';
-import { FloatingButton } from '../components/elements';
 
 export default class DefaultTheme extends React.Component {
   constructor(props) {
@@ -49,9 +48,6 @@ export default class DefaultTheme extends React.Component {
             <LeftbarItem>A</LeftbarItem>
             <LeftbarItem>F</LeftbarItem>
           </Leftbar>
-          <FloatingButton onClick={this.invertTheme}>
-            <img src={`./day-${this.state.theme.fg}.svg`} alt="Theme Toggler" />
-          </FloatingButton>
           <Content>
             <Container>{this.props.children}</Container>
           </Content>
