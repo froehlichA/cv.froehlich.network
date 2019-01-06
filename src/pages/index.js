@@ -8,7 +8,11 @@ import {
   LeftColumn,
   RightColumn,
   LeftParagraph,
-  RightParagraph
+  RightParagraph,
+  Cover,
+  CoverImage,
+  CoverContent,
+  Floater
 } from '../components/layout';
 import {
   Hero,
@@ -20,12 +24,6 @@ import {
   ListItem,
   Small
 } from '../components/typography';
-import {
-  Cover,
-  CoverImage,
-  CoverContent,
-  Floater
-} from '../components/elements';
 
 export default ({ data }) => (
   <Theme>

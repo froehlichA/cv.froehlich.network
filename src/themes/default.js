@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import '../../node_modules/normalize.css/normalize.css';
 import '../../node_modules/flexboxgrid/css/flexboxgrid.css';
 import './global.css';
+
 import { Leftbar, LeftbarItem, Container, Background } from '../components/layout';
 import GithubCorner from '../components/github-corner';
 
