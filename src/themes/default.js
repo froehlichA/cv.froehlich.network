@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import '../../node_modules/normalize.css/normalize.css';
 import '../../node_modules/flexboxgrid/css/flexboxgrid.css';
 import './global.css';
-import { Leftbar, LeftbarItem, Container, Content } from '../components/layout';
+import { Leftbar, LeftbarItem, Container, Background } from '../components/layout';
 import GithubCorner from '../components/github-corner';
 
 export default class DefaultTheme extends React.Component {
@@ -50,9 +50,9 @@ export default class DefaultTheme extends React.Component {
             <LeftbarItem>A</LeftbarItem>
             <LeftbarItem>F</LeftbarItem>
           </Leftbar>
-          <Content>
+          <Background>
             <Container>{this.props.children}</Container>
-          </Content>
+          </Background>
         </React.Fragment>
       </ThemeProvider>
     );
