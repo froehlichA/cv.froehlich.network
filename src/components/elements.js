@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-
+/**
+ * Renders a div that has a greater width than normal content.
+ */
 export const Cover = styled.div`
   position: relative;
   width: 100vw;
@@ -8,6 +8,9 @@ export const Cover = styled.div`
   overflow: auto;
 `;
 
+/**
+ * Provides a background image for a Cover component.
+ */
 export const CoverImage = styled(Img)`
   display: block;
   position: absolute !important;
@@ -18,6 +21,9 @@ export const CoverImage = styled(Img)`
   object-fit: cover;
 `;
 
+/**
+ * Renders content inside of a Cover component.
+ */
 export const CoverContent = styled.div`
   float: left;
   color: ${props => props.theme.bg};
@@ -27,6 +33,9 @@ export const CoverContent = styled.div`
   overflow: visible;
 `;
 
+/**
+ * Renders a floating black div with white text and white shadow to highlight specific elements.
+ */
 export const Floater = styled.div`
   background: ${props => props.theme.fg};
   box-shadow: 5px 5px ${props => props.theme.bg};

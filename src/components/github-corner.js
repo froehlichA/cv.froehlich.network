@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Renders a SVG link to this github repo in the top right corner.
+ */
 export default () => (
   <a href="https://github.com/froehlichA/portfolio" aria-label="View source on GitHub">
     <svg width="80" height="80" viewBox="0 0 250 250" style={{fill: '#151513', color: '#fff', position: 'absolute', top: 0,  border: 0,  right: 0 }} aria-hidden="true">
