@@ -52,8 +52,8 @@ export default ({ data }) => (
           and design database structures and algorithms.
         </TextP>
         <TextP>
-          Sometimes, I also like to write stuff, for others
-          to read / enjoy / criticize.
+          Sometimes, I also like to write stuff, for others to read / enjoy /
+          criticize.
         </TextP>
       </LeftParagraph>
     </Row>
@@ -61,7 +61,7 @@ export default ({ data }) => (
     <Cover>
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
-        <Spacer height="2rem" />
+        <Spacer height="4rem" />
         <Hero color="white">Above and beyond</Hero>
         <Spacer height="1rem" />
         <Row>
@@ -90,7 +90,7 @@ export default ({ data }) => (
             </Floater>
           </RightParagraph>
         </Row>
-        <Spacer height="2rem" />
+        <Spacer height="4rem" />
       </CoverContent>
     </Cover>
     <Spacer height="10rem" />
@@ -135,10 +135,8 @@ export default ({ data }) => (
     <Cover>
       <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
-        <Spacer height="2rem" />
-        <Hero color="wg">
-          Reach for the stars
-        </Hero>
+        <Spacer height="4rem" />
+        <Hero color="white">Reach for the stars</Hero>
         <Spacer height="1rem" />
         <Row>
           <LeftParagraph>
@@ -157,7 +155,7 @@ export default ({ data }) => (
             </Floater>
           </LeftParagraph>
         </Row>
-        <Spacer height="2rem" />
+        <Spacer height="4rem" />
       </CoverContent>
     </Cover>
     <Spacer height="10rem" />
