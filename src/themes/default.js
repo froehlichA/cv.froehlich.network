@@ -1,37 +1,43 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import { Link } from 'gatsby';
 
-import '../../node_modules/normalize.css/normalize.css';
-import '../../node_modules/flexboxgrid/css/flexboxgrid.css';
-import './global.css';
+import "../../node_modules/normalize.css/normalize.css";
+import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
+import "./global.css";
 
-import { Leftbar, LeftbarItem, Container, Background } from '../components/layout';
-import GithubCorner from '../components/github-corner';
+import {
+  Leftbar,
+  LeftbarItem,
+  Container,
+  Background
+} from "../components/layout";
+import GithubCorner from "../components/github-corner";
 
 export default class DefaultTheme extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       theme: {
-        fg: 'black',
-        lightfg: 'grey',
-        lightbg: 'lightgrey',
-        bg: 'white',
+        fg: "black",
+        lightfg: "grey",
+        lightbg: "lightgrey",
+        bg: "white"
       }
     };
     this.invertTheme = this.invertTheme.bind(this);
   }
 
   invertTheme() {
-    this.setState((prevState) => (
-      { theme:{
+    this.setState(prevState => ({
+      theme: {
         fg: prevState.theme.bg,
         lightfg: prevState.theme.lightbg,
         lightbg: prevState.theme.lightfg,
         bg: prevState.theme.fg
-      }}
-    ));
+      }
+    }));
   }
 
   render() {
@@ -46,13 +52,19 @@ export default class DefaultTheme extends React.Component {
               content="Online Portfolio of Alexander Fröhlich"
             />
           </Helmet>
-          <GithubCorner></GithubCorner>
+          <GithubCorner />
           <Leftbar>
             <LeftbarItem>A</LeftbarItem>
             <LeftbarItem>F</LeftbarItem>
           </Leftbar>
           <Background>
-            <Container>{this.props.children}</Container>
+            <Container>
+              <p>
+                <Link to="/">Home</Link> /{' '}
+                <Link to="/cv">CV</Link>
+              </p>
+              {this.props.children}
+            </Container>
           </Background>
         </React.Fragment>
       </ThemeProvider>

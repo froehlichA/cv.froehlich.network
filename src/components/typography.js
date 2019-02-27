@@ -14,6 +14,7 @@ export const Hero = styled.h1`
   `}
   margin: 0.2rem 0px 0.2rem -5px;
   font-size: 38px;
+  ${props => props.shadow && `text-shadow: 5px 5px ${props.theme.fg}`};
   @media (min-width: 350px) {
     font-size: 56px;
   }
