@@ -13,7 +13,8 @@ const typography = new Typography({
     "sans-serif"
   ],
   bodyFontFamily: ["Open Sans", "sans-serif"],
-  bodyColor: "black"
+  bodyColor: "black",
+  scaleRatio: 3
 });
 
 export default typography;

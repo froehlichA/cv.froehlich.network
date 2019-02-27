@@ -27,6 +27,14 @@ export const Container = styled.div`
   width: 80vw;
 `;
 
+export const Reader = styled.div`
+  margin: auto;
+  width: 80vw;
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+`;
+
 /**
  * Renders a div that spaces components apart from each other.
  */

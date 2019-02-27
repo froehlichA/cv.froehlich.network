@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
-import { Link } from 'gatsby';
 
 import "../../node_modules/normalize.css/normalize.css";
 import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
@@ -13,6 +12,7 @@ import {
   Container,
   Background
 } from "../components/layout";
+import { BoldLink } from "../components/typography";
 import GithubCorner from "../components/github-corner";
 
 export default class DefaultTheme extends React.Component {
@@ -60,8 +60,8 @@ export default class DefaultTheme extends React.Component {
           <Background>
             <Container>
               <p>
-                <Link to="/">Home</Link> /{' '}
-                <Link to="/cv">CV</Link>
+                <BoldLink to="/">Home</BoldLink> /{" "}
+                <BoldLink to="/cv">CV</BoldLink>
               </p>
               {this.props.children}
             </Container>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 /**
  * Renders a big title.
@@ -37,6 +38,11 @@ const resetToP = `
   font-weight: 400;
   letter-spacing: 0.1px;
   line-height: 1.8;
+`;
+
+export const BoldLink = styled(Link)`
+  font-weight: bold;
+  font-size: 18px;
 `;
 
 /**
