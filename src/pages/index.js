@@ -1,6 +1,6 @@
 import React from 'react';
 import Theme from '../themes/default';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import {
   Spacer,
@@ -43,7 +43,7 @@ export default ({ data }) => (
     <Hero color="fg" inverted>
       I solve problems using code.
     </Hero>
-    <Spacer height="2rem" />
+    <Spacer height="8rem" />
     <Row>
       <LeftParagraph>
         <TextP>
@@ -62,7 +62,7 @@ export default ({ data }) => (
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="4rem" />
-        <Hero color="white">Above and beyond</Hero>
+        <Hero color="white" shadow>Above and beyond</Hero>
         <Spacer height="1rem" />
         <Row>
           <RightParagraph>
@@ -136,7 +136,7 @@ export default ({ data }) => (
       <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="4rem" />
-        <Hero color="white">Reach for the stars</Hero>
+        <Hero color="white" shadow>Reach for the stars</Hero>
         <Spacer height="1rem" />
         <Row>
           <LeftParagraph>
@@ -162,7 +162,8 @@ export default ({ data }) => (
     <Row>
       <BigLink>
         My <a href="mailto:froald14@new.edvhtl.at">Email</a> /{' '}
-        <a href="https://github.com/froehlichA">Github</a>
+        <a href="https://github.com/froehlichA">Github</a> /{' '}
+        <Link to="/cv">CV</Link>
       </BigLink>
     </Row>
     <Small>© 2018 - Alexander Fröhlich</Small>
