@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/themes/default.js')
+          default: require.resolve('./src/themes/reading.js')
         }
       }
     }
