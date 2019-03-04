@@ -7,6 +7,15 @@ import styled from "styled-components";
 
 import { Row } from "../components/layout/flex";
 import Spacer from "../components/layout/spacer";
+import IconButton from '../components/layout/iconButton';
+import Header from '../components/typography/header';
+import ListTable from '../components/layout/listTable';
+
+const Blacktext = styled.div`
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+`;
 
 export default class CV extends React.Component {
   constructor() {
@@ -43,18 +52,18 @@ export default class CV extends React.Component {
         <Row>
           {Object.keys(this.state.buttons).map(button => (
             <div key={button}>
-              <Blackbox
+              <IconButton
                 onClick={() => this.setState({ selectedButton: button })}
               >
                 <Icon icon={button} fixedWidth />
-              </Blackbox>
+              </IconButton>
             </div>
           ))}
         </Row>
         <Row>
-          <Blackheader>
+          <Header>
             {this.state.buttons[this.state.selectedButton]}
-          </Blackheader>
+          </Header>
         </Row>
         <Row>
           <Blacktext style={{ display: this.isSelected("user") ? "" : "none" }}>
@@ -241,100 +250,3 @@ export default class CV extends React.Component {
     );
   }
 }
-
-const Blackbox = styled.button`
-  color: white;
-  background-color: black;
-  padding: 5px;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: 0;
-  cursor: pointer;
-  outline: none;
-  &:active {
-    margin-top: 3px;
-    margin-bottom: -3px;
-  }
-  @media (min-width: 768px) {
-    margin-right: 20px;
-    padding: 10px;
-    font-size: 25px;
-    width: 60px;
-    height: 60px;
-  }
-`;
-
-const Blackheader = styled.h1`
-  font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: -8px;
-  margin-left: 20px;
-  @media (min-width: 768px) {
-    margin-left: 10px;
-  }
-`;
-
-const Blacktext = styled.div`
-  width: 100%;
-  border: 2px solid black;
-  padding: 10px;
-`;
-
-const ListTable = styled.table`
-  width: 100%;
-  table-layout: fixed;
-  page-break-inside: auto;
-  overflow-wrap: break-word;
-  tbody tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
-  }
-  thead tr td {
-    font-weight: bold;
-  }
-  tbody tr td:first-child {
-    width: 35%;
-  }
-  tbody tr td ul {
-    margin-bottom: 0px;
-    margin-left: 0px;
-  }
-  tbody tr td ul li {
-    margin-bottom: 0px;
-  }
-  @media (max-width: 768px) {
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
-      display: block;
-    }
-
-    thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-
-    tbody tr td ul {
-      margin-left: 10px !important;
-    }
-
-    tbody tr td:first-child {
-      font-weight: bold;
-    }
-
-    tbody tr td {
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: 1px solid #eee;
-      position: relative;
-      width: 100% !important;
-      padding: 10px !important;
-    }
-  }
-`;
