@@ -12,7 +12,7 @@ import {
   Container,
   Background
 } from "../components/layout";
-import { BoldLink } from "../components/typography";
+import { BoldLink, BoldLinkContainer } from "../components/typography";
 import GithubCorner from "../components/github-corner";
 
 export default class DefaultTheme extends React.Component {
@@ -59,10 +59,10 @@ export default class DefaultTheme extends React.Component {
           </Leftbar>
           <Background>
             <Container>
-              <p>
+              <BoldLinkContainer>
                 <BoldLink to="/">Home</BoldLink> /{" "}
                 <BoldLink to="/cv">CV</BoldLink>
-              </p>
+              </BoldLinkContainer>
               {this.props.children}
             </Container>
           </Background>

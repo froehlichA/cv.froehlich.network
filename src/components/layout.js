@@ -23,7 +23,7 @@ export const Background = styled.div`
  * Renders child elements, with decreased width for easier reading.
  */
 export const Container = styled.div`
-  margin: 60px auto;
+  margin: 20px auto;
   width: 80vw;
 `;
 
