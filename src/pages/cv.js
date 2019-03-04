@@ -22,7 +22,7 @@ const CenterContent = styled.div`
   justify-content: center;
   width: 100%;
   *:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 `;
 
@@ -109,10 +109,6 @@ export default class CV extends React.Component {
                       https://github.com/froehlichA
                     </a>
                   </td>
-                </tr>
-                <tr>
-                  <td>Phone</td>
-                  <td>+43 660 6675375</td>
                 </tr>
               </tbody>
             </ListTable>
