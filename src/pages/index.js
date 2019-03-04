@@ -18,9 +18,9 @@ import {
   CoverContent,
   Floater
 } from "../components/layout/cover";
-import { List, ListItem } from '../components/typography/list';
-import Small from '../components/typography/small';
-import BigLink from '../components/typography/bigLink';
+import { List, ListItem } from "../components/typography/list";
+import Small from "../components/typography/small";
+import BigLink from "../components/typography/bigLink";
 
 export default ({ data }) => (
   <Theme>

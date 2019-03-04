@@ -2,9 +2,9 @@ import React from "react";
 import Theme from "../themes/default";
 import { Link } from "gatsby";
 
-import Spacer from '../components/layout/spacer';
-import Hero from '../components/typography/hero';
-import { TextP } from '../components/typography/toText';
+import Spacer from "../components/layout/spacer";
+import Hero from "../components/typography/hero";
+import { TextP } from "../components/typography/toText";
 
 const errorMessages = [
   "Hmm... I don't know what went wrong, but something did.",
