@@ -1,4 +1,5 @@
 import React from "react";
+import { withPrefix } from "gatsby";
 import Theme from "../themes/reading";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as icons from "@fortawesome/free-solid-svg-icons";
@@ -23,6 +24,9 @@ const CenterContent = styled.div`
   width: 100%;
   *:not(:last-child) {
     margin-right: 5px;
+  }
+  @media (min-width: 768px) {
+    justify-content: start;
   }
 `;
 
@@ -136,16 +140,47 @@ export default class CV extends React.Component {
           <Blacktext
             style={{ display: this.isSelected("award") ? "" : "none" }}
           >
-            <b>Certificates</b>
             <ListTable>
               <tbody>
                 <tr>
                   <td>English</td>
-                  <td>TODO</td>
+                  <td>
+                    <ul>
+                      <li>
+                        <a href={withPrefix("/files/English_CAE.pdf")}>
+                          Cambridge English Advanced (CAE)
+                        </a>
+                      </li>
+                      <li>
+                        <a href={withPrefix("/files/English_BEC.pdf")}>
+                          Cambridge English Business Vantage (BEC Vantage)
+                        </a>
+                      </li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>Networks</td>
-                  <td>TODO</td>
+                  <td>
+                    <ul>
+                      <li>
+                        <a href={withPrefix("/files/CCNA3.pdf")}>
+                          CCNA Routing and Switching: Scaling Networks
+                        </a>
+                      </li>
+                      <li>
+                        <a href={withPrefix("/files/CCNA2_noSignature.pdf")}>
+                          CCNA Routing and Switching: Routing and Switching
+                          Essentials
+                        </a>
+                      </li>
+                      <li>
+                        <a href={withPrefix("/files/CCNA1.pdf")}>
+                          CCNA Routing and Switching: Introduction to Networks
+                        </a>
+                      </li>
+                    </ul>
+                  </td>
                 </tr>
               </tbody>
             </ListTable>
@@ -153,12 +188,16 @@ export default class CV extends React.Component {
             <ListTable>
               <tbody>
                 <tr>
-                  <td>Programming</td>
-                  <td>TODO</td>
-                </tr>
-                <tr>
                   <td>IT Security</td>
-                  <td>TODO</td>
+                  <td>
+                    <ul>
+                      <li>
+                        <a href={withPrefix("/files/KaindorfCTF1.pdf")}>
+                          Kaindorf School CTF 2018 - 2nd Place
+                        </a>
+                      </li>
+                    </ul>
+                  </td>
                 </tr>
               </tbody>
             </ListTable>
@@ -197,13 +236,22 @@ export default class CV extends React.Component {
                   </td>
                 </tr>
                 <tr>
+                  <td>Other languages</td>
+                  <td>
+                    <ul>
+                      <li>C#, C++, C</li>
+                      <li>Python</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
                   <td>Databases</td>
                   <td>
                     <ul>
                       <li>Relational Databases with PostgreSQL and Oracle</li>
-                      <li>Redis as a Key-Value Store</li>
-                      <li>MongoDB as a Document Store</li>
-                      <li>Neo4J as a Graph Database</li>
+                      <li>Redis</li>
+                      <li>MongoDB</li>
+                      <li>Neo4J</li>
                     </ul>
                   </td>
                 </tr>
