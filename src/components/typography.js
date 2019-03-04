@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 /**
  * Renders a big title.
@@ -76,7 +76,7 @@ export const TextH2 = styled.h2`
  * Renders a simple p element.
  */
 export const TextP = styled.p`
-  color: ${props => props.inverted ? props.theme.bg : props.theme.fg};
+  color: ${props => (props.inverted ? props.theme.bg : props.theme.fg)};
   ${resetToP}
 `;
 

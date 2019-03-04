@@ -1,6 +1,6 @@
-import React from 'react';
-import Theme from '../themes/default';
-import { graphql, Link } from 'gatsby';
+import React from "react";
+import Theme from "../themes/default";
+import { graphql, Link } from "gatsby";
 
 import {
   Spacer,
@@ -13,7 +13,7 @@ import {
   CoverImage,
   CoverContent,
   Floater
-} from '../components/layout';
+} from "../components/layout";
 import {
   Hero,
   BigLink,
@@ -23,7 +23,7 @@ import {
   List,
   ListItem,
   Small
-} from '../components/typography';
+} from "../components/typography";
 
 export default ({ data }) => (
   <Theme>
@@ -62,7 +62,9 @@ export default ({ data }) => (
       <CoverImage fluid={data.space.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="4rem" />
-        <Hero color="white" shadow>Above and beyond</Hero>
+        <Hero color="white" shadow>
+          Above and beyond
+        </Hero>
         <Spacer height="1rem" />
         <Row>
           <RightParagraph>
@@ -136,7 +138,9 @@ export default ({ data }) => (
       <CoverImage fluid={data.woodwork.childImageSharp.fluid} />
       <CoverContent>
         <Spacer height="4rem" />
-        <Hero color="white" shadow>Reach for the stars</Hero>
+        <Hero color="white" shadow>
+          Reach for the stars
+        </Hero>
         <Spacer height="1rem" />
         <Row>
           <LeftParagraph>
@@ -161,8 +165,8 @@ export default ({ data }) => (
     <Spacer height="10rem" />
     <Row>
       <BigLink>
-        My <a href="mailto:froald14@new.edvhtl.at">Email</a> /{' '}
-        <a href="https://github.com/froehlichA">Github</a> /{' '}
+        My <a href="mailto:froald14@new.edvhtl.at">Email</a> /{" "}
+        <a href="https://github.com/froehlichA">Github</a> /{" "}
         <Link to="/cv">CV</Link>
       </BigLink>
     </Row>
