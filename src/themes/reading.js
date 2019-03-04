@@ -2,7 +2,7 @@ import React from "react";
 import DefaultTheme from "./default";
 import { createGlobalStyle } from "styled-components";
 
-import Reader from '../components/layout/reader';
+import Reader from "../components/layout/reader";
 
 const GlobalReadingStyle = createGlobalStyle``;
 
