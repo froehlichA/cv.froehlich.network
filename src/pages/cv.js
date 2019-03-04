@@ -216,8 +216,8 @@ export default class CV extends React.Component {
                     </a>
                   </td>
                   <td>
-                    A own static website, used as a my own personal website,
-                    project showcase and blogging platform. More details{" "}
+                    A static website, used as a my own personal website, project
+                    showcase and blogging platform. More details{" "}
                     <a href="https://github.com/froehlichA/portfolio">here.</a>
                   </td>
                 </tr>
