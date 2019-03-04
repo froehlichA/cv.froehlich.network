@@ -1,9 +1,13 @@
 import React from "react";
 import { withPrefix } from "gatsby";
 import Theme from "../themes/reading";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import * as icons from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import {
+  FaUser,
+  FaGraduationCap,
+  FaAward,
+  FaTerminal,
+  FaLaptopCode
+} from "react-icons/fa";
 import styled from "styled-components";
 
 import { Row } from "../components/layout/flex";
@@ -33,23 +37,15 @@ const CenterContent = styled.div`
 export default class CV extends React.Component {
   constructor() {
     super();
-    library.add(
-      icons.faUser,
-      icons.faGraduationCap,
-      icons.faCertificate,
-      icons.faAward,
-      icons.faTerminal,
-      icons.faLaptopCode
-    );
     this.state = {
-      selectedButton: "user",
-      buttons: {
-        user: "General",
-        "graduation-cap": "Education",
-        award: "Certificates",
-        terminal: "Experience",
-        "laptop-code": "Projects"
-      }
+      selectedButton: "General",
+      buttons: [
+        { text: "General", icon: FaUser },
+        { text: "Education", icon: FaGraduationCap },
+        { text: "Certificates", icon: FaAward },
+        { text: "Experience", icon: FaTerminal },
+        { text: "Projects", icon: FaLaptopCode }
+      ]
     };
     this.isSelected = this.isSelected.bind(this);
   }
@@ -64,22 +60,30 @@ export default class CV extends React.Component {
         <Spacer height="2rem" />
         <Row>
           <CenterContent>
-            {Object.keys(this.state.buttons).map(button => (
-              <div key={button}>
+            {this.state.buttons.map(button => (
+              <div key={button.icon}>
                 <IconButton
-                  onClick={() => this.setState({ selectedButton: button })}
+                  onClick={() => this.setState({ selectedButton: button.text })}
                 >
-                  <Icon icon={button} fixedWidth />
+                  <button.icon />
                 </IconButton>
               </div>
             ))}
           </CenterContent>
         </Row>
         <Row>
-          <Header>{this.state.buttons[this.state.selectedButton]}</Header>
+          <Header>
+            {
+              this.state.buttons.find(
+                button => button.text === this.state.selectedButton
+              ).text
+            }
+          </Header>
         </Row>
         <Row>
-          <Blacktext style={{ display: this.isSelected("user") ? "" : "none" }}>
+          <Blacktext
+            style={{ display: this.isSelected("General") ? "" : "none" }}
+          >
             <ListTable>
               <tbody>
                 <tr>
@@ -118,7 +122,7 @@ export default class CV extends React.Component {
             </ListTable>
           </Blacktext>
           <Blacktext
-            style={{ display: this.isSelected("graduation-cap") ? "" : "none" }}
+            style={{ display: this.isSelected("Education") ? "" : "none" }}
           >
             <ListTable>
               <tbody>
@@ -138,7 +142,7 @@ export default class CV extends React.Component {
             </ListTable>
           </Blacktext>
           <Blacktext
-            style={{ display: this.isSelected("award") ? "" : "none" }}
+            style={{ display: this.isSelected("Certificates") ? "" : "none" }}
           >
             <ListTable>
               <tbody>
@@ -203,7 +207,7 @@ export default class CV extends React.Component {
             </ListTable>
           </Blacktext>
           <Blacktext
-            style={{ display: this.isSelected("terminal") ? "" : "none" }}
+            style={{ display: this.isSelected("Experience") ? "" : "none" }}
           >
             <ListTable>
               <tbody>
@@ -267,7 +271,7 @@ export default class CV extends React.Component {
             </ListTable>
           </Blacktext>
           <Blacktext
-            style={{ display: this.isSelected("laptop-code") ? "" : "none" }}
+            style={{ display: this.isSelected("Projects") ? "" : "none" }}
           >
             <ListTable>
               <tbody>
