@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
 
 /**
  * Renders a fixed background. Spans the whole page.
@@ -39,8 +39,8 @@ export const Reader = styled.div`
  * Renders a div that spaces components apart from each other.
  */
 export const Spacer = styled.div`
-  margin-top: ${props => props.height || '3rem'};
-  margin-bottom: ${props => (props.colored ? '5rem' : '0rem')};
+  margin-top: ${props => props.height || "3rem"};
+  margin-bottom: ${props => (props.colored ? "5rem" : "0rem")};
   height: 10px;
   position: relative;
   left: -10vw;
@@ -67,9 +67,9 @@ export const Row = ({ children }) => (
  * @param mod - The modifier of the mobile breakpoints (one of xs, sm, md, lg)
  */
 export const Column = ({ children, width, offset, mod }) => {
-  const calcMod = mod || 'sm';
+  const calcMod = mod || "sm";
   const calcWidth = `col-${calcMod}-${width}`;
-  const calcOffset = offset ? `col-${calcMod}-offset-${offset}` : '';
+  const calcOffset = offset ? `col-${calcMod}-offset-${offset}` : "";
   return (
     <div className={`${calcWidth} ${calcOffset}`} style={{ padding: 0 }}>
       {children}
