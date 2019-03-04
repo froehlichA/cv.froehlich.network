@@ -7,14 +7,23 @@ import styled from "styled-components";
 
 import { Row } from "../components/layout/flex";
 import Spacer from "../components/layout/spacer";
-import IconButton from '../components/layout/iconButton';
-import Header from '../components/typography/header';
-import ListTable from '../components/layout/listTable';
+import IconButton from "../components/layout/iconButton";
+import Header from "../components/typography/header";
+import ListTable from "../components/layout/listTable";
 
 const Blacktext = styled.div`
   width: 100%;
   border: 2px solid black;
   padding: 10px;
+`;
+
+const CenterContent = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  *:not(:last-child) {
+    margin-right: 10px;
+  }
 `;
 
 export default class CV extends React.Component {
@@ -50,20 +59,20 @@ export default class CV extends React.Component {
       <Theme>
         <Spacer height="2rem" />
         <Row>
-          {Object.keys(this.state.buttons).map(button => (
-            <div key={button}>
-              <IconButton
-                onClick={() => this.setState({ selectedButton: button })}
-              >
-                <Icon icon={button} fixedWidth />
-              </IconButton>
-            </div>
-          ))}
+          <CenterContent>
+            {Object.keys(this.state.buttons).map(button => (
+              <div key={button}>
+                <IconButton
+                  onClick={() => this.setState({ selectedButton: button })}
+                >
+                  <Icon icon={button} fixedWidth />
+                </IconButton>
+              </div>
+            ))}
+          </CenterContent>
         </Row>
         <Row>
-          <Header>
-            {this.state.buttons[this.state.selectedButton]}
-          </Header>
+          <Header>{this.state.buttons[this.state.selectedButton]}</Header>
         </Row>
         <Row>
           <Blacktext style={{ display: this.isSelected("user") ? "" : "none" }}>
