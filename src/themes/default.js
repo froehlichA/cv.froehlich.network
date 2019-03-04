@@ -6,13 +6,10 @@ import "../../node_modules/normalize.css/normalize.css";
 import "../../node_modules/flexboxgrid/css/flexboxgrid.css";
 import "./global.css";
 
-import {
-  Leftbar,
-  LeftbarItem,
-  Container,
-  Background
-} from "../components/layout";
-import { BoldLink, BoldLinkContainer } from "../components/typography";
+import { Leftbar, LeftbarItem } from '../components/layout/leftbar';
+import Background from '../components/layout/background';
+import Container from '../components/layout/container.js';
+import { BoldLinkContainer, BoldLink } from '../components/typography/boldLink';
 import GithubCorner from "../components/github-corner";
 
 export default class DefaultTheme extends React.Component {

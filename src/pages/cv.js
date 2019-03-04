@@ -1,10 +1,12 @@
 import React from "react";
 import Theme from "../themes/reading";
-import { Row, Spacer, Column } from "../components/layout";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as icons from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+
+import { Row } from '../components/layout/flex';
+import Spacer from '../components/layout/spacer';
 
 export default class CV extends React.Component {
   constructor() {

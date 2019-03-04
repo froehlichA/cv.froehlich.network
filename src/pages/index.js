@@ -3,27 +3,24 @@ import Theme from "../themes/default";
 import { graphql, Link } from "gatsby";
 
 import {
-  Spacer,
   Row,
   LeftColumn,
   RightColumn,
   LeftParagraph,
-  RightParagraph,
+  RightParagraph
+} from "../components/layout/flex";
+import { TextH1, TextH2, TextP } from "../components/typography/toText";
+import Spacer from "../components/layout/spacer";
+import Hero from "../components/typography/hero";
+import {
   Cover,
   CoverImage,
   CoverContent,
   Floater
-} from "../components/layout";
-import {
-  Hero,
-  BigLink,
-  TextH1,
-  TextH2,
-  TextP,
-  List,
-  ListItem,
-  Small
-} from "../components/typography";
+} from "../components/layout/cover";
+import { List, ListItem } from '../components/typography/list';
+import Small from '../components/typography/small';
+import BigLink from '../components/typography/bigLink';
 
 export default ({ data }) => (
   <Theme>
