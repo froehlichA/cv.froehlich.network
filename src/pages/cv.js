@@ -209,16 +209,50 @@ export default class CV extends React.Component {
           <Blacktext
             style={{ display: this.isSelected("Experience") ? "" : "none" }}
           >
+            <small>
+              Technologies / Libraries / Frameworks I've worked with extensively
+              are highlighted bold.
+            </small>
             <ListTable>
               <tbody>
                 <tr>
                   <td>Frontend Programming</td>
                   <td>
                     <ul>
-                      <li>HTML, CSS, and JS</li>
-                      <li>Frameworks such as Angular, React & VueJS</li>
-                      <li>Buildtools like Gulp & Webpack</li>
-                      <li>Typescript</li>
+                      <li>
+                        <b>HTML</b> / <b>CSS</b> / <b>Javascript</b> /{" "}
+                        <b>Typescript</b> / <b>SASS</b> / Less
+                      </li>
+                      <li>
+                        CSS Frameworks (<b>Bootstrap</b> & SemanticUI)
+                      </li>
+                      <li>
+                        JS Frameworks (<b>Angular</b>, <b>React</b> &{" "}
+                        <b>VueJS</b>)
+                      </li>
+                      <li>
+                        Buildtools (Gulp & <b>Webpack</b>)
+                      </li>
+                      <li>
+                        State Management (<b>Redux</b> for React & <b>VueX</b>{" "}
+                        for VueJS)
+                      </li>
+                      <li>
+                        Unit- and Integration Testing (<b>Mocha</b>, <b>Jest</b>{" "}
+                        & Karma)
+                      </li>
+                      <li>
+                        <b>Progressive Web Apps</b> with Service Workers
+                      </li>
+                      <li>
+                        <b>Server Side Rendering</b> /{" "}
+                        <b>Client Side Rendering</b> /{" "}
+                        <b>Static Site Generators</b>
+                      </li>
+                      <li>Desktop Applications (Electron)</li>
+                      <li>
+                        Mobile Applications (React Native, IonicJS & <b>Flutter</b>)
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -226,16 +260,8 @@ export default class CV extends React.Component {
                   <td>Backend Programming</td>
                   <td>
                     <ul>
-                      <li>NodeJS Backend with Express & NestJS</li>
+                      <li>NodeJS Backend with <b>Express</b> & NestJS</li>
                       <li>Java Backend with Spring</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td>App Development</td>
-                  <td>
-                    <ul>
-                      <li>Development with React Native & Flutter</li>
                     </ul>
                   </td>
                 </tr>
@@ -244,7 +270,7 @@ export default class CV extends React.Component {
                   <td>
                     <ul>
                       <li>C#, C++, C</li>
-                      <li>Python</li>
+                      <li><b>Python</b></li>
                     </ul>
                   </td>
                 </tr>
@@ -252,7 +278,7 @@ export default class CV extends React.Component {
                   <td>Databases</td>
                   <td>
                     <ul>
-                      <li>Relational Databases with PostgreSQL and Oracle</li>
+                      <li>Relational Databases with PostgreSQL and <b>Oracle</b></li>
                       <li>Redis</li>
                       <li>MongoDB</li>
                       <li>Neo4J</li>
@@ -263,7 +289,7 @@ export default class CV extends React.Component {
                   <td>Network Management</td>
                   <td>
                     <ul>
-                      <li>Networking with Cisco Devices</li>
+                      <li><b>Networking with Cisco Devices</b></li>
                     </ul>
                   </td>
                 </tr>
@@ -282,8 +308,9 @@ export default class CV extends React.Component {
                     </a>
                   </td>
                   <td>
-                    A static website, used as a my own personal website, project
-                    showcase and blogging platform. More details{" "}
+                    A static website, made with React and GatsbyJS, used as a my
+                    own personal website, project showcase and blogging
+                    platform. More details{" "}
                     <a href="https://github.com/froehlichA/portfolio">here.</a>
                   </td>
                 </tr>
@@ -291,7 +318,7 @@ export default class CV extends React.Component {
                   <td>
                     <a href="https://mattr.netlify.com/c/general">Mattr Chat</a>
                   </td>
-                  <td>A real-time chat build using Angular and websockets.</td>
+                  <td>A real-time chat built using Angular and websockets.</td>
                 </tr>
                 <tr>
                   <td>
