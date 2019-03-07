@@ -251,7 +251,8 @@ export default class CV extends React.Component {
                       </li>
                       <li>Desktop Applications (Electron)</li>
                       <li>
-                        Mobile Applications (React Native, IonicJS & <b>Flutter</b>)
+                        Mobile Applications (React Native, IonicJS &{" "}
+                        <b>Flutter</b>)
                       </li>
                     </ul>
                   </td>
@@ -260,7 +261,9 @@ export default class CV extends React.Component {
                   <td>Backend Programming</td>
                   <td>
                     <ul>
-                      <li>NodeJS Backend with <b>Express</b> & NestJS</li>
+                      <li>
+                        NodeJS Backend with <b>Express</b> & NestJS
+                      </li>
                       <li>Java Backend with Spring</li>
                     </ul>
                   </td>
@@ -270,7 +273,9 @@ export default class CV extends React.Component {
                   <td>
                     <ul>
                       <li>C#, C++, C</li>
-                      <li><b>Python</b></li>
+                      <li>
+                        <b>Python</b>
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -278,7 +283,9 @@ export default class CV extends React.Component {
                   <td>Databases</td>
                   <td>
                     <ul>
-                      <li>Relational Databases with PostgreSQL and <b>Oracle</b></li>
+                      <li>
+                        Relational Databases with PostgreSQL and <b>Oracle</b>
+                      </li>
                       <li>Redis</li>
                       <li>MongoDB</li>
                       <li>Neo4J</li>
@@ -289,7 +296,9 @@ export default class CV extends React.Component {
                   <td>Network Management</td>
                   <td>
                     <ul>
-                      <li><b>Networking with Cisco Devices</b></li>
+                      <li>
+                        <b>Networking with Cisco Devices</b>
+                      </li>
                     </ul>
                   </td>
                 </tr>
