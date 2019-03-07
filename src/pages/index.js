@@ -113,6 +113,9 @@ export default ({ data }) => (
             Webdesign & Webdevelopment using HTML, CSS, and JS, as well as
             popular frameworks and tools
           </ListItem>
+          <ListItem>
+            <Link to="/cv">More here</Link>
+          </ListItem>
         </List>
       </RightColumn>
     </Row>
