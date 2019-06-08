@@ -30,8 +30,7 @@ export default ({ data }) => (
       </LeftColumn>
       <RightColumn>
         <TextH2>
-          Programmer from Austria. Currently studying at HTBLA Kaindorf,
-          graduation date is June 2019. Feel free to contact me.
+          Programmer from Austria. Just graduated from HTBLA Kaindorf. Feel free to contact me.
         </TextH2>
       </RightColumn>
     </Row>
@@ -148,7 +147,7 @@ export default ({ data }) => (
               <TextP inverted>
                 Everyone can learn coding like everyone can learn woodworking.
                 It takes time and patience to succeed, and you can recognize
-                sloppy craftmanship in an instant.
+                sloppy craftsmanship in an instant.
               </TextP>
               <TextP inverted>
                 That is why I never stop learning. You can always improve
@@ -165,7 +164,7 @@ export default ({ data }) => (
     <Spacer height="10rem" />
     <Row>
       <BigLink>
-        My <a href="mailto:froald14@new.edvhtl.at">Email</a> /{" "}
+        My <a href="mailto:froehlich.alexander@protonmail.com">Email</a> /{" "}
         <a href="https://github.com/froehlichA">Github</a> /{" "}
         <Link to="/cv">CV</Link>
       </BigLink>

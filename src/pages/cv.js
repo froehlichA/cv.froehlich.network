@@ -93,9 +93,7 @@ export default class CV extends React.Component {
                 <tr>
                   <td>Occupation</td>
                   <td>
-                    Student at HTBLA Kaindorf
-                    <br />
-                    Graduation Date: June 2019
+                    Graduate of HTBLA Kaindorf
                   </td>
                 </tr>
                 <tr>
@@ -105,8 +103,8 @@ export default class CV extends React.Component {
                 <tr>
                   <td>Mail</td>
                   <td>
-                    <a href="mailto:alexander.froehlich.at@gmail.com">
-                      alexander.froehlich.at@gmail.com
+                    <a href="mailto:froehlich.alexander@protonmail.com">
+                      froehlich.alexander@protonmail.com
                     </a>
                   </td>
                 </tr>
@@ -167,6 +165,11 @@ export default class CV extends React.Component {
                   <td>Networks</td>
                   <td>
                     <ul>
+                      <li>
+                        <a href={withPrefix("/files/CCNA4.pdf")}>
+                          CCNA Routing and Switching: Connecting Networks
+                        </a>
+                      </li>
                       <li>
                         <a href={withPrefix("/files/CCNA3.pdf")}>
                           CCNA Routing and Switching: Scaling Networks
@@ -234,7 +237,7 @@ export default class CV extends React.Component {
                         Buildtools (Gulp & <b>Webpack</b>)
                       </li>
                       <li>
-                        State Management (<b>Redux</b> for React & <b>VueX</b>{" "}
+                        State Management (Redux for React & <b>VueX</b>{" "}
                         for VueJS)
                       </li>
                       <li>
@@ -264,6 +267,7 @@ export default class CV extends React.Component {
                       <li>
                         NodeJS Backend with <b>Express</b> & NestJS
                       </li>
+                      <li>PHP Backend with Laravel and CakePHP</li>
                       <li>Java Backend with Spring</li>
                     </ul>
                   </td>
@@ -274,7 +278,7 @@ export default class CV extends React.Component {
                     <ul>
                       <li>C#, C++, C</li>
                       <li>
-                        <b>Python</b>
+                        Python
                       </li>
                     </ul>
                   </td>
