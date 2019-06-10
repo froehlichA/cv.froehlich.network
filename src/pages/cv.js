@@ -90,11 +90,9 @@ export default class CV extends React.Component {
                   <td>Name</td>
                   <td>Alexander Fröhlich</td>
                 </tr>
-                <tr>
+                <tr> F
                   <td>Occupation</td>
-                  <td>
-                    Graduate of HTBLA Kaindorf
-                  </td>
+                  <td>Graduate of HTBLA Kaindorf</td>
                 </tr>
                 <tr>
                   <td>Location</td>
@@ -237,8 +235,8 @@ export default class CV extends React.Component {
                         Buildtools (Gulp & <b>Webpack</b>)
                       </li>
                       <li>
-                        State Management (Redux for React & <b>VueX</b>{" "}
-                        for VueJS)
+                        State Management (Redux for React & <b>VueX</b> for
+                        VueJS)
                       </li>
                       <li>
                         Unit- and Integration Testing (<b>Mocha</b>, <b>Jest</b>{" "}
@@ -277,9 +275,7 @@ export default class CV extends React.Component {
                   <td>
                     <ul>
                       <li>C#, C++, C</li>
-                      <li>
-                        Python
-                      </li>
+                      <li>Python</li>
                     </ul>
                   </td>
                 </tr>

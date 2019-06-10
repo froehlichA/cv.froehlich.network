@@ -30,7 +30,8 @@ export default ({ data }) => (
       </LeftColumn>
       <RightColumn>
         <TextH2>
-          Programmer from Austria. Just graduated from HTBLA Kaindorf. Feel free to contact me.
+          Programmer from Austria. Just graduated from HTBLA Kaindorf. Feel free
+          to contact me.
         </TextH2>
       </RightColumn>
     </Row>
