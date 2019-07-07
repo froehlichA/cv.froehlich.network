@@ -90,7 +90,7 @@ export default class CV extends React.Component {
                   <td>Name</td>
                   <td>Alexander Fröhlich</td>
                 </tr>
-                <tr> F
+                <tr>
                   <td>Occupation</td>
                   <td>Graduate of HTBLA Kaindorf</td>
                 </tr>
