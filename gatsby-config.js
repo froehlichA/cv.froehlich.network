@@ -29,7 +29,8 @@ module.exports = {
           default: require.resolve('./src/themes/reading.js')
         }
       }
-    }
+    },
+    `gatsby-plugin-netlify`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
