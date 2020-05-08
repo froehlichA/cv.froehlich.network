@@ -6,18 +6,21 @@ import { Link } from "gatsby";
  */
 export const BoldLinkContainer = styled.div`
   display: inline-block;
-  background-color: black;
-  color: white;
-  padding: 5px 10px;
+  margin-top: 10px;
   margin-bottom: 30px;
+  background-color: grey;
 `;
 
 /**
  * Renders a link to another page.
  */
 export const BoldLink = styled(Link)`
-  font-weight: bold;
-  font-size: 18px;
-  color: inherit;
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  font-size: 24px;
   text-decoration: none;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 `;

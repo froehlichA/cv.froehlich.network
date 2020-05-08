@@ -7,7 +7,7 @@ import {
   LeftColumn,
   RightColumn,
   LeftParagraph,
-  RightParagraph
+  RightParagraph,
 } from "../components/layout/flex";
 import { TextH1, TextH2, TextP } from "../components/typography/toText";
 import Spacer from "../components/layout/spacer";
@@ -16,7 +16,7 @@ import {
   Cover,
   CoverImage,
   CoverContent,
-  Floater
+  Floater,
 } from "../components/layout/cover";
 import { List, ListItem } from "../components/typography/list";
 import Small from "../components/typography/small";
@@ -30,8 +30,13 @@ export default ({ data }) => (
       </LeftColumn>
       <RightColumn>
         <TextH2>
-          Programmer from Austria. Just graduated from HTBLA Kaindorf. Feel free
-          to contact me.
+          Programmer from Austria. Currently working in civil service. Feel free
+          to contact me at{" "}
+          <i>
+            <a href="mailto:froehlich.alexander@pm.me">
+              froehlich.alexander@pm.me
+            </a>
+          </i>
         </TextH2>
       </RightColumn>
     </Row>
@@ -80,11 +85,11 @@ export default ({ data }) => (
               </TextP>
               <TextP inverted>
                 In the meantime, I had picked up web-development as a hobby, but
-                it quickly involved into a fascination. The ability of websites
+                it quickly evolved into a fascination. The ability of websites
                 and webapps to have a far wider reach than traditional
                 applications tempted me, and so began my journey into the world
-                of webdesign, javascript, and webdevelopment in general, which
-                is still going strong to this day.
+                of webdesign & webdevelopment, which is still going strong to
+                this day.
               </TextP>
             </Floater>
           </RightParagraph>
@@ -126,7 +131,9 @@ export default ({ data }) => (
       </LeftColumn>
       <RightColumn>
         <List>
-          <ListItem>Working with and in a team</ListItem>
+          <ListItem>
+            Working with and in a professional software development team
+          </ListItem>
           <ListItem>
             Gaining experience with both development and management
           </ListItem>
@@ -170,7 +177,7 @@ export default ({ data }) => (
         <Link to="/cv">CV</Link>
       </BigLink>
     </Row>
-    <Small>© 2018 - Alexander Fröhlich</Small>
+    <Small>© 2020 - Alexander Fröhlich</Small>
   </Theme>
 );
 

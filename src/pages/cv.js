@@ -263,7 +263,7 @@ export default class CV extends React.Component {
                   <td>
                     <ul>
                       <li>
-                        NodeJS Backend with <b>Express</b> & NestJS
+                        NodeJS Backend with <b>Express</b> & <b>NestJS</b>
                       </li>
                       <li>PHP Backend with Laravel and CakePHP</li>
                       <li>Java Backend with Spring</li>
@@ -284,10 +284,10 @@ export default class CV extends React.Component {
                   <td>
                     <ul>
                       <li>
-                        Relational Databases with PostgreSQL and <b>Oracle</b>
+                        Relational Databases with <b>Postgres</b> and <b>Oracle</b>
                       </li>
                       <li>Redis</li>
-                      <li>MongoDB</li>
+                      <li><b>MongoDB</b></li>
                       <li>Neo4J</li>
                     </ul>
                   </td>
@@ -312,8 +312,8 @@ export default class CV extends React.Component {
               <tbody>
                 <tr>
                   <td>
-                    <a href="https://alexanderfroehlich.me">
-                      alexanderfroehlich.me
+                    <a href="https://froehlich.network">
+                      froehlich.network
                     </a>
                   </td>
                   <td>

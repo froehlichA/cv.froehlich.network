@@ -5,7 +5,7 @@ import styled from "styled-components";
  */
 export const Leftbar = styled.div`
   position: fixed;
-  width: 4vw;
+  width: 60px;
   height: 100vh;
   top: 0;
   left: 0;

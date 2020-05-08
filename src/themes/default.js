@@ -31,7 +31,7 @@ export default class DefaultTheme extends React.Component {
         <Background>
           <Container>
             <BoldLinkContainer>
-              <BoldLink to="/">Home</BoldLink> /{" "}
+              <BoldLink to="/">Home</BoldLink>
               <BoldLink to="/cv">CV</BoldLink>
             </BoldLinkContainer>
             {this.props.children}
