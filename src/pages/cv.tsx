@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../def";
 import Logo from "../components/logo";
 import A, { Link } from "../components/link";
@@ -44,9 +44,10 @@ const shuffleArray = (a: any[]) => {
   return a;
 };
 
-const technologies = shuffleArray([...languages, ...utils, ...dbs]);
-
 export default () => {
+  const [technologies] = useState<string[]>(
+    shuffleArray([...languages, ...utils, ...dbs])
+  );
   return (
     <React.Fragment>
       <Link to="/">
