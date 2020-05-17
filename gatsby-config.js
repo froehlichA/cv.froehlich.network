@@ -1,38 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `A portfolio site for Alexander Froehlich.`,
-    author: `froehlichA`
+    title: `froehlich.network`,
+    description: `The portfolio site of Alexander Fröhlich.`,
+    author: `Froehlich Alexander`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/typography/typography`
-      }
-    },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-react-svg`,
       options: {
-        defaultLayouts: {
-          default: require.resolve('./src/themes/reading.js')
-        }
-      }
+        rule: {
+          include: /assets/,
+        },
+      },
     },
-    `gatsby-plugin-netlify`
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-  ]
+  ],
 };
