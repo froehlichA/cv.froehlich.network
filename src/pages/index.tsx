@@ -11,9 +11,11 @@ import TextColumn from "../components/index/text-column";
 import SceneColumn from "../components/index/scene-column";
 import SceneContainer from "../components/scene-container";
 import SceneWorld from "../components/scenes/world";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Flex>
+    <SEO title="Homepage" description="Homepage of Alexander Fröhlich." />
     <TextColumn>
       <Link to="/">
         <Logo />
@@ -32,7 +34,9 @@ const IndexPage = () => (
             froehlich.alexander@pm.me
           </A>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <A simple href="https://github.com/froehlichA">Github</A>
+          <A simple href="https://github.com/froehlichA">
+            Github
+          </A>
         </p>
       </header>
       <p>I'm a junior programmer with a focus on frontend development.</p>
@@ -41,13 +45,17 @@ const IndexPage = () => (
         development job for afterwards.
       </p>
       <p>
-        <Link simple to="/cv">Here's my CV, if you're interested.</Link>
+        <Link simple to="/cv">
+          Here's my CV, if you're interested.
+        </Link>
       </p>
       <Spacer></Spacer>
       <H2 color="lightblue">Recent Projects</H2>
       <ul>
         <li css="list-style: square;">
-          <A simple href="https://froehlich.network">Homepage - built with React</A>
+          <A simple href="https://froehlich.network">
+            Homepage - built with React
+          </A>
         </li>
       </ul>
     </TextColumn>

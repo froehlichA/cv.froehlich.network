@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../def";
 import Logo from "../components/logo";
 import A, { Link } from "../components/link";
+import SEO from "../components/seo";
 
 const languages = [
   "javascript",
@@ -41,6 +42,7 @@ const technologies = [...languages, ...utils, ...dbs];
 export default () => {
   return (
     <React.Fragment>
+      <SEO title="CV" description="Resume of Alexander Fröhlich." />
       <Link to="/">
         <Logo />
       </Link>
