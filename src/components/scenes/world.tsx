@@ -3,6 +3,9 @@ import { TAU } from "zdog";
 import { Illustration, Anchor, Cone } from "react-zdog";
 import Animator from "./util/animator";
 
+/**
+ * A spinning "globe"-like structure composed of cones.
+ */
 export default () => {
   const [isSpinning, setSpinning] = useState(true);
   const color = "#E83";

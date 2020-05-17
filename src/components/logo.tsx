@@ -7,22 +7,22 @@ const TriangleIcon = styled(Icon)`
   width: 40px;
 `;
 
-const IconContainer = styled.div`
-  height: 40px;
-  width: 40px;
-  &:hover {
-    background-color: #222222;
-  }
-  margin-bottom: 60px;
-  @media only screen and (min-width: 768px) {
-    margin-bottom: 100px;
-  }
+const LogoContainer = styled.div`
+height: 40px;
+width: 40px;
+&:hover {
+  background-color: #222222;
+}
+margin-bottom: 60px;
+@media only screen and (min-width: 768px) {
+  margin-bottom: 100px;
+}
 `;
 
 export default () => {
   return (
-    <IconContainer>
+    <LogoContainer>
       <TriangleIcon />
-    </IconContainer>
+    </LogoContainer>
   );
 };

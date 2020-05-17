@@ -6,6 +6,9 @@ interface ZAnimatorProps {
   children: ReactNode;
 }
 
+/**
+ * An animation helper for zzz.dog scenes.
+ */
 export default ({ action, children }: ZAnimatorProps) => {
   const ref = useRef(undefined);
   useRender(() => {

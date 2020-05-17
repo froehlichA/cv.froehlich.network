@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
-import CvLayout from "../layouts/cv";
-import Icon from "../components/icon";
+import "../../def";
+import Logo from "../components/logo";
+import A, { Link } from "../components/link";
 
 const languages = [
   "javascript",
@@ -13,7 +13,7 @@ const languages = [
   "typescript",
 ];
 
-const technologies = [
+const utils = [
   "sass",
   "angular",
   "react",
@@ -44,17 +44,26 @@ const shuffleArray = (a: any[]) => {
   return a;
 };
 
+const technologies = shuffleArray([...languages, ...utils, ...dbs]);
+
 export default () => {
   return (
-    <CvLayout>
+    <React.Fragment>
       <Link to="/">
-        <Icon />
+        <Logo />
       </Link>
-      <h1>Technologies I've worked with</h1>
-      <p className="big">
-        {shuffleArray([...languages, ...technologies, ...dbs]).map(t => (
+      <h1 css="margin-top: 10px;">Technologies I've worked with</h1>
+      <p
+        css={`
+          font-size: 40px;
+          @media only screen and (min-width: 768px) {
+            font-size: 60px;
+          }
+        `}
+      >
+        {technologies.map(t => (
           <span>
-            {t} <span className="grey">/</span>{" "}
+            {t} <span css="color: #444444;">/</span>{" "}
           </span>
         ))}{" "}
         . . .
@@ -67,14 +76,14 @@ export default () => {
           ).getFullYear() - 1970
         )}{" "}
         years old. I'm from Austria, but I know{" "}
-        <a href="/files/cae.pdf">my way around English</a>.
-        I'm a bit interested into <a href="/files/ctf.pdf">IT Security</a> too.
+        <A href="/files/cae.pdf">my way around English</A>. I'm a bit interested
+        into <A href="/files/ctf.pdf">IT Security</A> too.
       </p>
       <hr />
       <p>
         If you want my complete CV <b>in german</b>, you can get it{" "}
-        <a href="/files/resume.pdf">here</a>.
+        <A href="/files/resume.pdf">here</A>.
       </p>
-    </CvLayout>
+    </React.Fragment>
   );
 };

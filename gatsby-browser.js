@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+// Styles
+import "typeface-mukta";
+import "./src/styles/global.css";
