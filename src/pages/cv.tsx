@@ -36,18 +36,9 @@ const utils = [
 
 const dbs = ["postgres", "oracle", "mongo", "neo4j", "redis"];
 
-const shuffleArray = (a: any[]) => {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
+const technologies = [...languages, ...utils, ...dbs];
 
 export default () => {
-  const [technologies] = useState<string[]>(
-    shuffleArray([...languages, ...utils, ...dbs])
-  );
   return (
     <React.Fragment>
       <Link to="/">
