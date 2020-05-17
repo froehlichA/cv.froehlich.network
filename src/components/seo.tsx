@@ -31,6 +31,13 @@ export default ({
   const metaDescription: string = description || site.siteMetadata.description;
   return (
     <Helmet
+        link={[
+            {
+                rel: "icon",
+                type: "image/png",
+                href: "favicon.png"
+            }
+        ]}
       htmlAttributes={{
         lang,
       }}
