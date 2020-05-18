@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl";
 import "../../def";
 import Logo from "../components/logo";
 import A, { Link } from "../components/link";
@@ -40,13 +41,20 @@ const dbs = ["postgres", "oracle", "mongo", "neo4j", "redis"];
 const technologies = [...languages, ...utils, ...dbs];
 
 export default () => {
+  const intl = useIntl();
   return (
     <React.Fragment>
-      <SEO title="CV" description="Resume of Alexander Fröhlich." />
+      <SEO
+        lang={intl.locale}
+        title={intl.formatMessage({ id: "cv.seo.title" })}
+        description={intl.formatMessage({ id: "cv.seo.description" })}
+      />
       <Link to="/">
         <Logo />
       </Link>
-      <h1 css="margin-top: 10px;">Technologies I've worked with</h1>
+      <h1 css="margin-top: 10px;">
+        <FormattedMessage id="cv.title" />
+      </h1>
       <p
         css={`
           font-size: 40px;
@@ -63,20 +71,23 @@ export default () => {
         . . .
       </p>
       <p>
-        I'm{" "}
-        {Math.abs(
-          new Date(
-            Date.now() - new Date("2000-08-30").getTime()
-          ).getFullYear() - 1970
-        )}{" "}
-        years old. I'm from Austria, but I know{" "}
-        <A href="/files/cae.pdf">my way around English</A>. I'm a bit interested
-        into <A href="/files/ctf.pdf">IT Security</A> too.
+        <FormattedMessage
+          id="cv.addendum"
+          values={{
+            years: 18,
+            cae: (...chunks) => <A href="/files/cae.pdf">{chunks}</A>,
+            ctf: (...chunks) => <A href="/files/ctf.pdf">{chunks}</A>,
+          }}
+        />
       </p>
       <hr />
       <p>
-        If you want my complete CV <b>in german</b>, you can get it{" "}
-        <A href="/files/resume.pdf">here</A>.
+        <FormattedMessage
+          id="cv.download"
+          values={{
+            cv: (...chunks) => <A href="/files/resume.pdf">{chunks}</A>,
+          }}
+        />
       </p>
     </React.Fragment>
   );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as GatsbyLink } from "gatsby";
+import { Link as GatsbyLink } from "gatsby-plugin-intl";
 
 export default styled.a<{ simple?: boolean }>`
   color: ${props => (props.simple ? "inherit" : "lightblue")};

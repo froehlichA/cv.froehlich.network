@@ -1,0 +1,33 @@
+{
+  "index": {
+    "seo": {
+      "title": "Homepage",
+      "description": "Homepage von Alexander Fröhlich"
+    },
+    "header": "Alexander Fröhlich - Österreich",
+    "description": {
+      "job": "Ich bin Programmierer mit einem Fokus auf das Frontend.",
+      "status": "Ich bin zurzeit im Zivildienst, and auf der Suche nach einem Software-Development-Job ab Juli.",
+      "cv": "Hier findest du mein Resümee."
+    },
+    "projects": {
+      "title": "Kürzliche Projekte",
+      "list": {
+        "homepage": "Homepage - Portfolio & Showcase"
+      }
+    },
+    "caption": {
+      "description": "Pseudo-3D Renderer in Javascript",
+      "action": "(Versuch's mal zu bewegen!)"
+    }
+  },
+  "cv": {
+    "seo": {
+      "title": "Resümee",
+      "description": "Resümee von Alexander Fröhlich"
+    },
+    "title": "Technologien, mit denen ich gearbeitet habe",
+    "addendum": "Ich bin {years} Jahre alt. Ich bin zwar aus Österreich, kenne mich aber in <cae>Englisch</cae> aus. Ich bin auch in <ctf>IT Security</ctf> interessiert.",
+    "download": "Falls du ein komplettes PDF mit allen Daten downloaden willst, findest du es <cv>hier</cv>."
+  }
+}

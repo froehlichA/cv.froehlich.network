@@ -1,0 +1,33 @@
+{
+  "index": {
+    "seo": {
+      "title": "Homepage",
+      "description": "Homepage of Alexander Fröhlich"
+    },
+    "header": "Alexander Fröhlich - Austria",
+    "description": {
+      "job": "I'm a junior programmer with a focus on frontend development.",
+      "status": "I'm currently in civil service, and am searching for a software development job starting in July.",
+      "cv": "Here's my CV, if you're interested."
+    },
+    "projects": {
+      "title": "Recent Projects",
+      "list": {
+        "homepage": "Homepage - Portfolio & Showcase"
+      }
+    },
+    "caption": {
+      "description": "Pseudo-3D Renderer in Javascript",
+      "action": "(Try dragging it!)"
+    }
+  },
+  "cv": {
+    "seo": {
+      "title": "CV",
+      "description": "Resume of Alexander Fröhlich"
+    },
+    "title": "Technologies I've worked with",
+    "addendum": "I'm {years} years old. I'm from Austria, but I know <cae>my way around English</cae>. I'm a bit interested in <ctf>IT Security</ctf> too.",
+    "download": "If you want a complete PDF with every info I can give you, you can get it <cv>here</cv>."
+  }
+}
