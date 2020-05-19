@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useIntl, FormattedMessage } from "gatsby-plugin-intl";
+import { useSpring, animated } from "react-spring";
 import "../../def";
 import Flex from "../components/flex";
 import Logo from "../components/logo";
@@ -11,10 +12,10 @@ import Caption from "../components/caption";
 import TextColumn from "../components/index/text-column";
 import SceneColumn from "../components/index/scene-column";
 import SceneContainer from "../components/scene-container";
-import SceneWorld from "../components/scenes/world";
+import WorldScene from "../components/scenes/world";
 import SEO from "../components/seo";
 
-const IndexPage = () => {
+export default () => {
   const intl = useIntl();
   return (
     <Flex>
@@ -72,18 +73,31 @@ const IndexPage = () => {
         </ul>
       </TextColumn>
       <SceneColumn size={300}>
-        <SceneContainer size={300}>
-          <SceneWorld></SceneWorld>
-          <Caption>
-            <FormattedMessage id="index.caption.description" />
-          </Caption>
-          <Caption>
-            <FormattedMessage id="index.caption.action" />
-          </Caption>
-        </SceneContainer>
+        <Scene></Scene>
       </SceneColumn>
     </Flex>
   );
 };
 
-export default IndexPage;
+const Scene = () => {
+  const [props, set] = useSpring(() => ({
+    config: { friction: 16 },
+    transform: "scale(0)",
+  }));
+  useEffect(() => {
+    set({ transform: "scale(1)" });
+  }, [set]);
+  return (
+    <animated.div style={props}>
+      <SceneContainer size={300}>
+        <WorldScene></WorldScene>
+        <Caption>
+          <FormattedMessage id="index.caption.description" />
+        </Caption>
+        <Caption>
+          <FormattedMessage id="index.caption.action" />
+        </Caption>
+      </SceneContainer>
+    </animated.div>
+  );
+};
