@@ -27,7 +27,7 @@
       "description": "Resümee von Alexander Fröhlich"
     },
     "title": "Technologien, mit denen ich gearbeitet habe",
-    "addendum": "Ich bin {years} Jahre alt. Ich bin zwar aus Österreich, kenne mich aber in <cae>Englisch</cae> aus. Ich bin auch in <ctf>IT Security</ctf> interessiert.",
+    "addendum": "Ich bin {years} Jahre alt. Ich bin zwar aus Österreich, kenne mich aber in <cae>Englisch</cae> aus. Ich bin auch an <ctf>IT Security</ctf> interessiert.",
     "download": "Falls du ein komplettes PDF mit allen Daten downloaden willst, findest du es <cv>hier</cv>."
   }
 }
