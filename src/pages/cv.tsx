@@ -74,7 +74,11 @@ export default () => {
         <FormattedMessage
           id="cv.addendum"
           values={{
-            years: 18,
+            years: Math.abs(
+              new Date(
+                Date.now() - new Date("2000-08-30").getTime()
+              ).getFullYear() - 1970
+            ),
             cae: (...chunks) => <A href="/files/cae.pdf">{chunks}</A>,
             ctf: (...chunks) => <A href="/files/ctf.pdf">{chunks}</A>,
           }}
