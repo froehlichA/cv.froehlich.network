@@ -6,12 +6,12 @@
     },
     "header": "Alexander Fröhlich - Österreich",
     "description": {
-      "job": "Ich bin Programmierer mit einem Fokus auf das Frontend.",
-      "status": "Ich bin zurzeit im Zivildienst, and auf der Suche nach einem Software-Development-Job ab Juli.",
+      "job": "Ich bin Programmierer mit einem Fokus auf's Frontend.",
+      "status": "Ich bin zurzeit im Zivildienst, and auf der Suche nach einem Software Development Job ab Juli.",
       "cv": "Hier findest du mein Resümee."
     },
     "projects": {
-      "title": "Kürzliche Projekte",
+      "title": "Neueste Projekte",
       "list": {
         "homepage": "Homepage - Portfolio & Showcase"
       }
