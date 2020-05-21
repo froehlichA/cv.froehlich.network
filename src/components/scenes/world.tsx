@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { TAU } from "zdog";
 import { Illustration, Anchor, Cone } from "react-zdog";
 import Animator from "./util/animator";

@@ -13,6 +13,7 @@ import TextColumn from "../components/index/text-column";
 import SceneColumn from "../components/index/scene-column";
 import SceneContainer from "../components/scene-container";
 import WorldScene from "../components/scenes/world";
+import CubeScene from "../components/scenes/cube";
 import SEO from "../components/seo";
 
 export default () => {
@@ -79,6 +80,8 @@ export default () => {
   );
 };
 
+const scenes = [<WorldScene></WorldScene>, <CubeScene></CubeScene>];
+
 const Scene = () => {
   const [props, set] = useSpring(() => ({
     config: { friction: 16 },
@@ -87,10 +90,13 @@ const Scene = () => {
   useEffect(() => {
     set({ transform: "scale(1)" });
   }, [set]);
+  const [randomScene] = useState(
+    scenes[Math.floor(Math.random() * scenes.length)]
+  );
   return (
     <animated.div style={props}>
       <SceneContainer size={300}>
-        <WorldScene></WorldScene>
+        {randomScene}
         <Caption>
           <FormattedMessage id="index.caption.description" />
         </Caption>

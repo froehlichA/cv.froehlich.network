@@ -1754,6 +1754,11 @@
   resolved "https://registry.yarnpkg.com/@types/yoga-layout/-/yoga-layout-1.9.1.tgz#6c00e4a151a9a529397d580e2cf6f3947a42a928"
   integrity sha512-OpfgQXWLZn5Dl7mOd8dBNcV8NywXbYYoHjUpa64vJ/RQABaxMzJ5bVicKLGIvIiMnQPtPgKNgXb5jkv9fkOQtw==
 
+"@types/zdog@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@types/zdog/-/zdog-1.1.1.tgz#62daf2340fa417caef3b40adb0c028c777206a0e"
+  integrity sha512-pEtwfB3RqQQVFf5Vk92mnVW9XRXUEx2HMItcfg+dSHgMPG4W7jmzDvPbPJYNK8qyZNZNnNWLAqbQpluvOy2Mng==
+
 "@typescript-eslint/eslint-plugin@^2.24.0":
   version "2.31.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.31.0.tgz#942c921fec5e200b79593c71fafb1e3f57aa2e36"
