@@ -84,6 +84,16 @@ export default () => {
           }}
         />
       </p>
+      <p>
+        <FormattedMessage
+          id="cv.status"
+          values={{
+            mail: (...chunks) => (
+              <A href="mailto:froehlich.alexander@pm.me">{chunks}</A>
+            ),
+          }}
+        ></FormattedMessage>
+      </p>
       <hr />
       <p>
         <FormattedMessage
