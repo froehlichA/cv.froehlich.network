@@ -86,13 +86,27 @@ export default () => {
       </p>
       <p>
         <FormattedMessage
+          id="cv.experience"
+          values={{
+            b: (...chunks) => (
+              <A href="https://www.b4b-solutions.com/">{chunks}</A>
+            ),
+            k: (...chunks) => <A href="https://krickl.gmbh/">{chunks}</A>,
+            pbs: (...chunks) => (
+              <A href="https://paketbox-systems.at/">{chunks}</A>
+            ),
+          }}
+        />
+      </p>
+      <p>
+        <FormattedMessage
           id="cv.status"
           values={{
             mail: (...chunks) => (
               <A href="mailto:froehlich.alexander@pm.me">{chunks}</A>
             ),
           }}
-        ></FormattedMessage>
+        />
       </p>
       <hr />
       <p>
