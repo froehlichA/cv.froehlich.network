@@ -40,6 +40,10 @@ const dbs = ["postgres", "oracle", "mongo", "neo4j", "redis"];
 
 const technologies = [...languages, ...utils, ...dbs];
 
+const linkTo = (href: string) => (...chunks: any) => (
+  <A href={href}>{chunks}</A>
+);
+
 export default () => {
   const intl = useIntl();
   return (
@@ -79,8 +83,8 @@ export default () => {
                 Date.now() - new Date("2000-08-30").getTime()
               ).getFullYear() - 1970
             ),
-            cae: (...chunks) => <A href="/files/cae.pdf">{chunks}</A>,
-            ctf: (...chunks) => <A href="/files/ctf.pdf">{chunks}</A>,
+            cae: linkTo("/files/cae.pdf"),
+            ctf: linkTo("/files/ctf.pdf"),
           }}
         />
       </p>
@@ -88,16 +92,10 @@ export default () => {
         <FormattedMessage
           id="cv.experience"
           values={{
-            kain: (...chunks) => (
-              <A href="https://www.htl-kaindorf.at/">{chunks}</A>
-            ),
-            b: (...chunks) => (
-              <A href="https://www.b4b-solutions.com/">{chunks}</A>
-            ),
-            k: (...chunks) => <A href="https://krickl.gmbh/">{chunks}</A>,
-            pbs: (...chunks) => (
-              <A href="https://paketbox-systems.at/">{chunks}</A>
-            ),
+            kain: linkTo("https://www.htl-kaindorf.at/"),
+            b: linkTo("https://www.b4b-solutions.com/"),
+            k: linkTo("https://krickl.gmbh/"),
+            pbs: linkTo("https://paketbox-systems.at/"),
           }}
         />
       </p>
@@ -105,9 +103,7 @@ export default () => {
         <FormattedMessage
           id="cv.status"
           values={{
-            mail: (...chunks) => (
-              <A href="mailto:froehlich.alexander@pm.me">{chunks}</A>
-            ),
+            mail: linkTo("mailto:froehlich.alexander@pm.me"),
           }}
         />
       </p>
@@ -116,7 +112,7 @@ export default () => {
         <FormattedMessage
           id="cv.download"
           values={{
-            cv: (...chunks) => <A href="/files/resume.pdf">{chunks}</A>,
+            cv: linkTo("/files/resume.pdf"),
           }}
         />
       </p>
