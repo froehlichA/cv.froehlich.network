@@ -88,6 +88,9 @@ export default () => {
         <FormattedMessage
           id="cv.experience"
           values={{
+            kain: (...chunks) => (
+              <A href="https://www.htl-kaindorf.at/">{chunks}</A>
+            ),
             b: (...chunks) => (
               <A href="https://www.b4b-solutions.com/">{chunks}</A>
             ),
