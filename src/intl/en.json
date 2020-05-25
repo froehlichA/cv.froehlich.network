@@ -13,6 +13,8 @@
     "projects": {
       "title": "Recent Projects",
       "list": {
+        "civilservice": "Finishing civil service",
+        "learninglang": "Programming with Lisp",
         "homepage": "Homepage - Portfolio & Showcase"
       }
     },

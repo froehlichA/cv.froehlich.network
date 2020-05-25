@@ -13,6 +13,8 @@
     "projects": {
       "title": "Neueste Projekte",
       "list": {
+        "civilservice": "Zivildienst abschließen",
+        "learninglang": "Programmieren mit Lisp",
         "homepage": "Homepage - Portfolio & Showcase"
       }
     },

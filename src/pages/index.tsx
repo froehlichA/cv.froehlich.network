@@ -9,6 +9,7 @@ import H2 from "../components/normal-h2";
 import A, { Link } from "../components/link";
 import Spacer from "../components/spacer";
 import Caption from "../components/caption";
+import ListSquare from "../components/list-square";
 import TextColumn from "../components/index/text-column";
 import SceneColumn from "../components/index/scene-column";
 import SceneContainer from "../components/scene-container";
@@ -65,13 +66,19 @@ export default () => {
         <H2 color="lightblue">
           <FormattedMessage id="index.projects.title" />
         </H2>
-        <ul>
-          <li css="list-style: square;">
+        <ListSquare>
+          <li>
+            <FormattedMessage id="index.projects.list.civilservice" />
+          </li>
+          <li>
+            <FormattedMessage id="index.projects.list.learninglang" />
+          </li>
+          <li>
             <A simple href="https://froehlich.network">
               <FormattedMessage id="index.projects.list.homepage" />
             </A>
           </li>
-        </ul>
+        </ListSquare>
       </TextColumn>
       <SceneColumn size={300}>
         <Scene></Scene>
