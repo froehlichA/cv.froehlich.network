@@ -13,7 +13,7 @@
     "projects": {
       "title": "Neueste Projekte",
       "list": {
-        "civilservice": "Zivildienst abschließen",
+        "homeserver": "Homeserver aufsetzen",
         "learninglang": "Programmieren mit Lisp",
         "homepage": "Homepage - Portfolio & Showcase"
       }

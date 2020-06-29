@@ -13,7 +13,7 @@
     "projects": {
       "title": "Recent Projects",
       "list": {
-        "civilservice": "Finishing civil service",
+        "homeserver": "Setting up a home server",
         "learninglang": "Programming with Lisp",
         "homepage": "Homepage - Portfolio & Showcase"
       }

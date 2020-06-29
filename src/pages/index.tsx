@@ -68,7 +68,7 @@ export default () => {
         </H2>
         <ListSquare>
           <li>
-            <FormattedMessage id="index.projects.list.civilservice" />
+            <FormattedMessage id="index.projects.list.homeserver" />
           </li>
           <li>
             <FormattedMessage id="index.projects.list.learninglang" />
