@@ -17,6 +17,10 @@ import WorldScene from "../components/scenes/world";
 import CubeScene from "../components/scenes/cube";
 import SEO from "../components/seo";
 
+const intlLink = (href: string) => (...chunks: any) => (
+  <A simple href={href}>{chunks}</A>
+);
+
 export default () => {
   const intl = useIntl();
   return (
@@ -55,6 +59,9 @@ export default () => {
           <FormattedMessage id="index.description.job" />
         </p>
         <p>
+          <FormattedMessage id="index.description.info" />
+        </p>
+        <p>
           <FormattedMessage id="index.description.status" />
         </p>
         <p>
@@ -68,7 +75,12 @@ export default () => {
         </H2>
         <ListSquare>
           <li>
-            <FormattedMessage id="index.projects.list.homeserver" />
+            <FormattedMessage
+              id="index.projects.list.homeserver"
+              values={{
+                nixos: intlLink("https://nixos.org")
+              }}
+            />
           </li>
           <li>
             <FormattedMessage id="index.projects.list.learninglang" />

@@ -6,14 +6,15 @@
     },
     "header": "Alexander Fröhlich - Österreich",
     "description": {
-      "job": "Ich bin Programmierer mit einem Fokus auf's Frontend.",
-      "status": "Ich bin zurzeit im Zivildienst, and auf der Suche nach einem Software Development Job ab Juli.",
+      "job": "Ich bin Software Entwickler mit einem Fokus auf's Frontend.",
+      "info": "Wenn ich nicht gerade an einem meiner Nebenprojekte arbeite, bin ich dabei, ein neues zu starten. ;)",
+      "status": "Da ich meinen Zivildienst mit Ende Juli abgeschlossen habe, bin ich derzeit auf Arbeitssuche.",
       "cv": "Hier findest du mein Resümee."
     },
     "projects": {
       "title": "Neueste Projekte",
       "list": {
-        "homeserver": "Homeserver aufsetzen",
+        "homeserver": "Homeserver mit <nixos>NixOS</nixos> aufsetzen",
         "learninglang": "Programmieren mit Lisp",
         "homepage": "Homepage - Portfolio & Showcase"
       }
@@ -31,7 +32,7 @@
     "title": "Technologien, mit denen ich gearbeitet habe",
     "addendum": "Ich bin {years} Jahre alt. Ich bin aus Österreich und beherrsche Englisch <cae>in Schrift und Sprache</cae>. Ich bin auch an <ctf>IT Security</ctf> interessiert.",
     "experience": "Neben der Schulzeit in <kain>HTBLA Kaindorf</kain> habe ich auch mit manchen Unternehmen wie <b>B4B Solutions</b>, <k>Krickl GmbH</k> und <pbs>ParcelBox Solutions</pbs> zusammengearbeitet.",
-    "status": "Ich werde meinen Zivildienst im Juni abschließen und bin ab Juli am Arbeitsmarkt verfügbar. Falls du ein Jobangebot hast, kannst du mich gerne unter <mail>froehlich.alexander@pm.me</mail> kontaktieren.",
+    "status": "Ich habe meinen Zivildienst Ende Juni abgeschlossen und bin derzeit am Arbeitsmarkt verfügbar. Falls du ein Jobangebot hast, kannst du mich gerne unter <mail>froehlich.alexander@pm.me</mail> kontaktieren.",
     "download": "<cv>Hier</cv> findest du meinen Lebenslauf als PDF."
   }
 }

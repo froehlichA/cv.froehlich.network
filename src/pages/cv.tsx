@@ -34,13 +34,15 @@ const utils = [
   "spring",
   "laravel",
   "flask",
+  "git",
+  "CI & CD"
 ];
 
 const dbs = ["postgres", "oracle", "mongo", "neo4j", "redis"];
 
 const technologies = [...languages, ...utils, ...dbs];
 
-const linkTo = (href: string) => (...chunks: any) => (
+const intlLink = (href: string) => (...chunks: any) => (
   <A href={href}>{chunks}</A>
 );
 
@@ -83,8 +85,8 @@ export default () => {
                 Date.now() - new Date("2000-08-30").getTime()
               ).getFullYear() - 1970
             ),
-            cae: linkTo("/files/cae.pdf"),
-            ctf: linkTo("/files/ctf.pdf"),
+            cae: intlLink("/files/cae.pdf"),
+            ctf: intlLink("/files/ctf.pdf"),
           }}
         />
       </p>
@@ -92,10 +94,10 @@ export default () => {
         <FormattedMessage
           id="cv.experience"
           values={{
-            kain: linkTo("https://www.htl-kaindorf.at/"),
-            b: linkTo("https://www.b4b-solutions.com/"),
-            k: linkTo("https://krickl.gmbh/"),
-            pbs: linkTo("https://paketbox-systems.at/"),
+            kain: intlLink("https://www.htl-kaindorf.at/"),
+            b: intlLink("https://www.b4b-solutions.com/"),
+            k: intlLink("https://krickl.gmbh/"),
+            pbs: intlLink("https://paketbox-systems.at/"),
           }}
         />
       </p>
@@ -103,7 +105,7 @@ export default () => {
         <FormattedMessage
           id="cv.status"
           values={{
-            mail: linkTo("mailto:froehlich.alexander@pm.me"),
+            mail: intlLink("mailto:froehlich.alexander@pm.me"),
           }}
         />
       </p>
@@ -112,7 +114,7 @@ export default () => {
         <FormattedMessage
           id="cv.download"
           values={{
-            cv: linkTo("/files/resume.pdf"),
+            cv: intlLink("/files/resume.pdf"),
           }}
         />
       </p>
