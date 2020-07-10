@@ -8,11 +8,16 @@ import SEO from "../components/seo";
 const languages = [
   "javascript",
   "java",
+  "c#",
   "c++",
   "c",
   "python",
   "haskell",
   "typescript",
+  "dart",
+  "html",
+  "css",
+  "js"
 ];
 
 const utils = [
@@ -27,6 +32,7 @@ const utils = [
   "cypress",
   "PWAs",
   "electron",
+  "bootstrap",
   "flutter",
   "react-native",
   "express",
@@ -35,7 +41,7 @@ const utils = [
   "laravel",
   "flask",
   "git",
-  "CI & CD"
+  "CI & CD",
 ];
 
 const dbs = ["postgres", "oracle", "mongo", "neo4j", "redis"];
