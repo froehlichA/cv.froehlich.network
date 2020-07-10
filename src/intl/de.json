@@ -6,17 +6,17 @@
     },
     "header": "Alexander Fröhlich - Österreich",
     "description": {
-      "job": "Ich bin Software Entwickler mit einem Fokus auf's Frontend.",
-      "info": "Wenn ich nicht gerade an einem meiner Nebenprojekte arbeite, bin ich dabei, ein neues zu starten. ;)",
+      "job": "Ich bin Software Entwickler (HTBLA Kaindorf Absolvent) mit einem Fokus auf's Frontend 🖥️.",
+      "info": "Wenn ich nicht gerade an einem Nebenprojekt sitze, bin ich am Radfahren 🚲 oder sitze bei einem Boardgame ♟️.",
       "status": "Da ich meinen Zivildienst mit Ende Juli abgeschlossen habe, bin ich derzeit auf Arbeitssuche.",
       "cv": "Hier findest du mein Resümee."
     },
     "projects": {
       "title": "Neueste Projekte",
       "list": {
-        "homeserver": "Homeserver mit <nixos>NixOS</nixos> aufsetzen",
-        "learninglang": "Programmieren mit Lisp",
-        "homepage": "Homepage - Portfolio & Showcase"
+        "homeserver": "💻 Homeserver & Workstations mit <nixos>NixOS</nixos> aufsetzen",
+        "learninglang": "💾 Programmieren mit Lisp",
+        "homepage": "🏠 <home>Homepage - Portfolio & Showcase</home>"
       }
     },
     "caption": {

@@ -17,7 +17,7 @@ import WorldScene from "../components/scenes/world";
 import CubeScene from "../components/scenes/cube";
 import SEO from "../components/seo";
 
-const intlLink = (href: string) => (...chunks: any) => (
+const intlA = (href: string) => (...chunks: any) => (
   <A simple href={href}>{chunks}</A>
 );
 
@@ -78,7 +78,7 @@ export default () => {
             <FormattedMessage
               id="index.projects.list.homeserver"
               values={{
-                nixos: intlLink("https://nixos.org")
+                nixos: intlA("https://nixos.org")
               }}
             />
           </li>
@@ -86,9 +86,12 @@ export default () => {
             <FormattedMessage id="index.projects.list.learninglang" />
           </li>
           <li>
-            <A simple href="https://froehlich.network">
-              <FormattedMessage id="index.projects.list.homepage" />
-            </A>
+            <FormattedMessage
+              id="index.projects.list.homepage"
+              values={{
+                home: intlA("https://froehlich.network")
+              }}
+            />
           </li>
         </ListSquare>
       </TextColumn>

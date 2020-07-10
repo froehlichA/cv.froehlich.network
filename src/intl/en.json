@@ -6,17 +6,17 @@
     },
     "header": "Alexander Fröhlich - Austria",
     "description": {
-      "job": "I'm a junior programmer with a focus on frontend development.",
-      "info": "If I'm not currently working on a side project, I'm in the process of starting a new one. ;)",
+      "job": "I'm a junior programmer with a focus on frontend development 🖥️.",
+      "info": "If I'm not currently working on a side project, I'm biking 🚲 or playing a boardgame ♟️",
       "status": "I've completed my civil service in June, and am currently searching for a job.",
       "cv": "Here's my CV, if you're interested."
     },
     "projects": {
       "title": "Recent Projects",
       "list": {
-        "homeserver": "Setting up a <nix>NixOS</nix> home server",
-        "learninglang": "Programming with Lisp",
-        "homepage": "Homepage - Portfolio & Showcase"
+        "homeserver": "💻 Setting up reproducable <nix>NixOS</nix> home server & workstations",
+        "learninglang": "💾 Programming with Lisp",
+        "homepage": "🏠 <home>Homepage - Portfolio & Showcase</home>"
       }
     },
     "caption": {
