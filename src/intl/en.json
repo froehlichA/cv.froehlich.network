@@ -8,7 +8,7 @@
     "description": {
       "job": "I'm a junior programmer with a focus on frontend development 🖥️.",
       "info": "If I'm not currently working on a side project, I'm biking 🚲 or playing a boardgame ♟️.",
-      "status": "I've completed my civil service in June, and am currently searching for a job.",
+      "status": "I'm currently employed at <job>RecordIT</job> 💼, und am studying Software Engineering & Management at <uni>TU Graz</uni> 🏫.",
       "cv": "Here's my CV, if you're interested."
     },
     "projects": {

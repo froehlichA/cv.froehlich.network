@@ -59,10 +59,16 @@ export default () => {
           <FormattedMessage id="index.description.job" />
         </p>
         <p>
-          <FormattedMessage id="index.description.info" />
+          <FormattedMessage id="index.description.info"/>
         </p>
         <p>
-          <FormattedMessage id="index.description.status" />
+          <FormattedMessage
+            id="index.description.status"
+            values={{
+              job: intlA("https://recordit.at/"),
+              uni: intlA("https://www.tugraz.at/home/")
+            }}
+          />
         </p>
         <p>
           <Link simple to="/cv">
