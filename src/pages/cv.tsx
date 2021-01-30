@@ -111,6 +111,7 @@ export default () => {
         <FormattedMessage
           id="cv.status"
           values={{
+            job: intlLink("https://recordit.at/"),
             mail: intlLink("mailto:froehlich.alexander@pm.me"),
           }}
         />
