@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `froehlich.network`,
+    title: `cv.froehlich.network`,
     description: `The portfolio site of Alexander Fröhlich.`,
     author: `Froehlich Alexander`,
   },

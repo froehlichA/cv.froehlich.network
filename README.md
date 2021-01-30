@@ -1,4 +1,4 @@
-# [froehlich.network](https://alexanderfroehlich.me)
+# [cv.froehlich.network](https://cv.froehlich.network)
 
 > Alexander Fröhlich's online portfolio and CV
 

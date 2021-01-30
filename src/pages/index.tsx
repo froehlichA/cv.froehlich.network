@@ -95,7 +95,7 @@ export default () => {
             <FormattedMessage
               id="index.projects.list.homepage"
               values={{
-                home: intlA("https://froehlich.network")
+                home: intlA("https://cv.froehlich.network")
               }}
             />
           </li>
