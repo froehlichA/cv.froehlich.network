@@ -8,7 +8,7 @@
     "description": {
       "job": "I'm a junior programmer with a focus on frontend development 🖥️.",
       "info": "If I'm not currently working on a side project, I'm biking 🚲 or playing a boardgame ♟️.",
-      "status": "I'm currently employed at <job>RecordIT</job> 💼, und am studying Software Engineering & Management at <uni>TU Graz</uni> 🏫.",
+      "status": "I'm currently employed at <job>RecordIT</job> 💼 and am studying Software Engineering & Management at <uni>TU Graz</uni> 🏫.",
       "cv": "Here's my CV, if you're interested."
     },
     "projects": {
@@ -31,7 +31,7 @@
     },
     "title": "Technologies I've worked with",
     "addendum": "I'm {years} years old. I'm from Austria, but I know <cae>my way around English</cae>. I'm a bit interested in <ctf>IT Security</ctf> too.",
-    "experience": "Alongside my time in <kain>HTBLA Kaindorf</kain> (High School), I've been working with some companies like <b>B4B Solutions</b>, <k>Krickl GmbH</k> und <pbs>ParcelBox Solutions</pbs>.",
+    "experience": "Alongside my time in <kain>HTBLA Kaindorf</kain> (High School), I've been working with some companies like <b>B4B Solutions</b>, <k>Krickl GmbH</k>, and <pbs>ParcelBox Solutions</pbs>.",
     "status": "I'm currently working at <job>RecordIT</job>. In case you have any questions or inquires, you can message me at <mail>froehlich.alexander@pm.me</mail>.",
     "download": "If you want a complete PDF with every info I can give you, you can get it <cv>here</cv>."
   }
